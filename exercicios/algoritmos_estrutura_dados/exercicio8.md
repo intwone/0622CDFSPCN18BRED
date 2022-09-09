@@ -11,4 +11,5 @@ function verificaSeTemVogal(string) {
 
 formataString("Cassio"); // retorna o número 3 (Cassio tem 3 vagais)
 formataString("Digital House"); // retorna o número 6 (Digital House tem 6 vagais)
+formataString("P#L4VR4"); // retorna a string 'Não há vogais na string'
 ```
