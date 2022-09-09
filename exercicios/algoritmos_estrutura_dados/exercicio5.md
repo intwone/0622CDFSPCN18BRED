@@ -7,9 +7,9 @@ Exemplo:
 ```js
 const array = [3, 5, 6, 27, 9, 2, 4, 7, 12];
 
-function numeroDivisivesPorTres(array) {
+function numerosDivisiveisPorTres(array) {
   // TO DO
 }
 
-numeroDivisivesPorTres(array); // retorna o número 57 (3 + 6 + 27 + 9 + 12)
+numerosDivisiveisPorTres(array); // retorna o número 57 (3 + 6 + 27 + 9 + 12)
 ```
