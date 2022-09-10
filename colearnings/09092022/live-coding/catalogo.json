@@ -1,0 +1,26 @@
+[
+  {
+    "codigo": 1,
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "duracao": 2,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2001,
+    "emCartaz": false
+  },
+  {
+    "codigo": 2,
+    "titulo": "Atividade Paranormal",
+    "duracao": 1.5,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2022,
+    "emCartaz": true
+  },
+  {
+    "codigo": 3,
+    "titulo": "Atividade Paranormal 2",
+    "duracao": 2.5,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2020,
+    "emCartaz": true
+  }
+]

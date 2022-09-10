@@ -1,0 +1,17 @@
+[
+  {
+    "nome": "Cassio Oliveira",
+    "idade": 29,
+    "estaAtivo": true
+  },
+  {
+    "nome": "Wendel Silva",
+    "idade": 24,
+    "estaAtivo": true
+  },
+  {
+    "nome": "Mario Silva",
+    "idade": 30,
+    "estaAtivo": false
+  }
+]

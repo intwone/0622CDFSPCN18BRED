@@ -1,0 +1,34 @@
+[
+  {
+    "codigo": 1,
+    "titulo": "Harry Potter e a Pedra Filosofal",
+    "duracao": 2,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2001,
+    "emCartaz": false
+  },
+  {
+    "codigo": 2,
+    "titulo": "Atividade Paranormal",
+    "duracao": 3,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2022,
+    "emCartaz": true
+  },
+  {
+    "codigo": 3,
+    "titulo": "Jumanji",
+    "duracao": 2.5,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2021,
+    "emCartaz": false
+  },
+  {
+    "codigo": 4,
+    "titulo": "Birdbox",
+    "duracao": 1.4,
+    "atores": ["Ator 1", "Ator 2", "Ator 3"],
+    "anoDeLancamento": 2020,
+    "emCartaz": false
+  }
+]
