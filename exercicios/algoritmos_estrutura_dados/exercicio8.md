@@ -1,4 +1,4 @@
-### 8 - Crie uma função que recebe `uma string` por parâmetro e retorne a `quantidade de vogais` contidas na string. Se não house vogais na string, retorne a frase ‘Não há vogais na string’
+### 8 - Crie uma função que recebe `uma string` por parâmetro e retorne a `quantidade de vogais` contidas na string. Se não houver vogais na string, retorne a frase ‘Não há vogais na string’
 
 <br>
 
