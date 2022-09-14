@@ -45,6 +45,14 @@ function alterarStatusEmCartaz(codigo) {
 
 // console.log(alterarStatusEmCartaz(3))
 
+function alterarStatusEmCartaz2(codigo, callback) {
+  const filme = callback(codigo)
+  filme[0].emCartaz = !filme[0].emCartaz
+
+  return filme
+}
+
+
 const filmes = {
   id: 1,
   filme: "test1",
