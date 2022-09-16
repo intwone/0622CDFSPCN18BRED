@@ -1,10 +1,10 @@
 const mensagem = function() {
-  console.log('Essa mensagem será executada em 3 segundos')
+  // console.log('Essa mensagem será executada em 3 segundos')
 }
 
 setTimeout(mensagem, 0)
 
-console.log('Aquiii')
+// console.log('Aquiii')
 
 // -------------
 
@@ -24,11 +24,25 @@ function restoDaDivisao(numero1, numero2) {
   return numero1 % numero2
 }
 
+// Declaracao da funcao processar
 function processar(numero1, numero2, callback) {
-  return callback(numero1, numero2)
+  const retornoDaFuncaoCallback = callback(numero1, numero2)
+  return retornoDaFuncaoCallback
 }
 
-// console.log(processar(10, 20, multiplica))
+// function qualquer(a, b) {
+//   return a - b * 2
+// }
+
+// const fn2 = (a, b) => {
+//   return a * b
+// }
+
+// Chamada/Invocacao da funcao processar
+processar(10, 20, (a, b) => {
+  a * b
+})
+
 // console.log(processar(12, 100, soma))
 // console.log(processar(10, 0, divide))
 
@@ -40,15 +54,3 @@ function alterarStatusEmCartaz(codigo) {
 
 // console.log(alterarStatusEmCartaz(2))
 
-// ------------------------------
-
-
-// map
-
-const array = [1, 4, 6, 7, 9, 10, 24]
-
-const arrayMapeado = array.map(function(valor) {
-  return valor * 2
-})
-
-console.log(arrayMapeado)
