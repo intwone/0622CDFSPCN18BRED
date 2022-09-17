@@ -7,10 +7,10 @@ Neste colearning coletivo iremos realizar a refatoração do projeto utilizando 
 #
 
 ## Atividade 1 - Criação do projeto
-- [ ] Criar o diretório chamado cine-house-v2
-- [ ] Abrir o diretório com o VS Code
-- [ ] Inicializar um projeto node no diretório
-- [ ] Instalar a biblioteca nodemon
+- [x] Criar o diretório chamado cine-house-v2
+- [x] Abrir o diretório com o VS Code
+- [x] Inicializar um projeto node no diretório
+- [x] Instalar a biblioteca nodemon
 
 [Documentação nodemon - NPM](https://www.npmjs.com/package/nodemon)
 
@@ -18,8 +18,8 @@ Neste colearning coletivo iremos realizar a refatoração do projeto utilizando 
 
 ## Atividade 2 - Criação do banco de dados e entry point do projeto
 
-- [ ] Criar o arquivo chamado `filmes.js`, este arquivo será um módulo onde irá simular o nosso banco de dados, dentro do arquivo deve conter:
-  - [ ] Um array de objetos onde cada objeto, deve ter as seguintes propriedades:
+- [x] Criar o arquivo chamado `filmes.js`, este arquivo será um módulo onde irá simular o nosso banco de dados, dentro do arquivo deve conter:
+  - [x] Um array de objetos onde cada objeto, deve ter as seguintes propriedades:
 
 
 | Propriedade       | Tipo de Dado      |
@@ -31,17 +31,17 @@ Neste colearning coletivo iremos realizar a refatoração do projeto utilizando 
 | `anoDeLancamento` | `number`          |
 | `emCartaz`        | `boolean`         |
 
-- [ ] Criar o arquivo entry point do projeto com o nome: `app.js`
-- [ ] Importar o módulo **filmes** para dentro do nosso entry point
-- [ ] Dentro do entry point, exibir no console a lista de filmes.
+- [x] Criar o arquivo entry point do projeto com o nome: `app.js`
+- [x] Importar o módulo **filmes** para dentro do nosso entry point
+- [x] Dentro do entry point, exibir no console a lista de filmes.
 
 #
 
 ## Atividade 3 - Transformando o banco de dados para arquivo JSON
-- [ ] Na raíz do diretório do projeto (cine-house-v2), criar o diretório: **database**
-- [ ] Dentro do diretório **database** criar o arquivo `filmes.json` e passar para os dados do arquivo `filmes.js` para o formato **json** no novo arquivo criado no diretório database.
-- [ ] No entry point, alterar o caminho da importação do "banco de dados" para reconhecer o arquivo json
-- [ ] Se no console do banco de dados aparecer a lista de filmes é porque tudo ocorreu com sucesso.
+- [x] Na raíz do diretório do projeto (cine-house-v2), criar o diretório: **database**
+- [x] Dentro do diretório **database** criar o arquivo `filmes.json` e passar para os dados do arquivo `filmes.js` para o formato **json** no novo arquivo criado no diretório database.
+- [x] No entry point, alterar o caminho da importação do "banco de dados" para reconhecer o arquivo json
+- [x] Se no console do banco de dados aparecer a lista de filmes é porque tudo ocorreu com sucesso.
 
 <details>
     <summary markdown="span">Dica</summary>
@@ -79,7 +79,7 @@ Neste colearning coletivo iremos realizar a refatoração do projeto utilizando 
 ## Atividade 4: Criando funções:
 
 Criar as seguintes funções:
-- [ ] **adicionarFilme**: Esta função deve adicionar um filme no nosso banco de dados.
+- [x] **adicionarFilme**: Esta função deve adicionar um filme no nosso banco de dados.
 - [ ] **buscarFilme**: Esta função deve receber como parâmetro o `id` do filme e retornar os dados do filme.
 - [ ] **alterarStatusEmCartaz**: Esta função deve receber como parâmetro o `id` do filme e deve alterar a propriedade `emCartaz` do filme. Ou seja, se o filme está como `true` deve passar a ser `false` e vice-versa.
 - [ ] **listarTodosOsFilmes**: Esta função deve listar todos os filmes que estão armazenados no banco de dados.
