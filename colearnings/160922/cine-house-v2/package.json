@@ -1,0 +1,15 @@
+{
+  "name": "cine-house-v2",
+  "version": "1.0.0",
+  "description": "Neste colearning coletivo iremos realizar a refatoração do projeto utilizando os novos conceitos que aprendemos durante o primeiro módulo do curso como arrow functions e métodos de array.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
