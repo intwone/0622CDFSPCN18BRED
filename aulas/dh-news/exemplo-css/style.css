@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+header h1 {
+    color: red;
+    font-size: 100px;
+}
+
+/*Css pela tag img */
+/* .banner img{
+    height: 500px;
+    width: 500px;
+} */
+
+.banner {
+    background-color: aqua;
+    height: 1000px;
+    background-image: url('./dbsuper.jpg');
+    background-repeat: no-repeat;
+/*     background-size: 500px;
+    background-position: center; */
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.description {
+    background-color: #baa27b;
+    color: white;
+}
+
+.description h1 {
+    /* color: green; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.description p {
+    color: blue;
+    /* font-size: 22px; */
+    line-height: 3;
+    text-align: center;
+}
+
+.description a {
+    color: brown;
+    font-size: 18px;
+}
+
+.lista-per {
+    list-style: none;
+}
+
+#cep h1 {
+    color: brown;
+    font-size: 66px;
+    /* font-family: 'Poppins', sans-serif; */
+}
+
+#cep .lista-per {
+    font-weight: bold;
+}
