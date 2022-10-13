@@ -2,4 +2,37 @@
 
 main, footer {
     text-align: center;
+    font-family: 'Open Sans';
+    line-height: 28px;
+
+    color: #7D7987;
+}
+
+.title {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 56px;
+
+    text-align: center;
+    color: #000000;
+}
+
+.title strong {
+    color: #6C63FF;
+}
+
+.text span {
+    color: #6C63FF;
+}
+
+hr {
+    background-color: #ECEFF2;
+    border: 1px solid #ECEFF2;
+    width: 800px;
+
+}
+
+footer a {
+    color: #6C63FF;
 }
