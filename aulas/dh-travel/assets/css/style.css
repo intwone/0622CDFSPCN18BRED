@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #EFEFEF;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: #0078AA;
+    color: white;
+    width: 100%;
+    padding: 20px;
+}
+
+header a {
+    color: white;
+}
+
+header h1, header ul, header ul li {
+    display: inline;
+}
+
+header li a {
+    margin-left: 10px;
+}
