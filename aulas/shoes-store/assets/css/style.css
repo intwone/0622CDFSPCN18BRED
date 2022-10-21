@@ -1,1 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    cursor: pointer;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    color: #777777;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+header a {
+    color: inherit;
+}
+
+header ul {
+
+    list-style: none;
+
+    display: flex;
+}
+
+header ul li {
+
+    margin-right: 20px;
+}
+
+.banner, .banner img {
+    width: 100%;
+}
+
+.your-style {
+    padding: 30px;
+}
+
+.your-style h2 {
+    text-align: center;
+    font-size: 42px;
+}
+
+.your-style article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+
+    margin-top: 60px;
+}
+
+.products {
+    background-color: #C2185B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.products h2 {
+
+}
+
+.products div {
+    display: flex;
+    gap: 15px;
+}
+
+.card-products {
+    background-color: white;
+}
