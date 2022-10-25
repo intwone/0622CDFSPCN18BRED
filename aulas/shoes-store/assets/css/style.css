@@ -68,6 +68,7 @@ header ul li {
     justify-content: center;
     align-items: center;
     gap: 35px;
+    flex-wrap: wrap;
 
     margin-top: 60px;
 }
@@ -75,21 +76,144 @@ header ul li {
 .products {
     background-color: #C2185B;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    padding: 50px;
+    gap: 30px;
+
+    padding: 50px 50px 80px 50px;
+    margin-top: 120px;
+    margin-bottom: 120px;
 }
 
 .products h2 {
-
+    color: white;
+    text-transform: uppercase;
+    font-size: 38px;
 }
 
 .products div {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
 }
 
 .card-products {
     background-color: white;
 }
+
+.products h2 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 38px;
+}
+
+.products div {
+    display: flex;
+    gap: 12px;
+}
+
+.card-products {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
+.card-products p, .card-products span {
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+
+.card-products p {
+    margin-top: 3px;
+    font-weight: bold;
+}
+
+.news {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    /* flex-wrap: wrap; */
+
+    margin-bottom: 60px;
+}
+
+.news div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.news div img {
+    margin-top: 50px;
+}
+
+.news-details h3 {
+    font-size: 39px;
+}
+
+.news-details button {
+    border: none;
+
+    width: 55%;
+    padding: 20px;
+
+    background-color: #C2185B;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+
+    cursor: pointer;;
+}
+
+footer {
+    background-color: #C2185B;
+    color: white;
+
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    /* align-items: center; */
+
+    /* Caso quiser alinhar as seçoes de categorias e institucional, aplicar o align itens flex-start e margin top no h4 de 50px*/
+
+    align-items: flex-start;
+
+    gap: 50px;
+}
+
+footer h4 {
+    font-size: 20px;
+    margin-top: 50px;
+
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul a {
+    color: white;
+}
+
+.footer-logo {
+    width: 20%;
+    line-height: 27px;
+
+}
+
+.categories {
+    text-transform: lowercase;
+    line-height: 27px;
+}
+
+.institutional {
+    text-transform: lowercase;
+    line-height: 27px;
+}
+
+/* Formulário */
