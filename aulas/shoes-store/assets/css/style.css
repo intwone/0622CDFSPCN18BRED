@@ -254,3 +254,8 @@ footer ul a {
     font-weight: bold;
 }
 
+.input-wrapper input {
+    border: 1px solid #9B9B9B;
+    height: 26px;
+    padding: 10px;
+}

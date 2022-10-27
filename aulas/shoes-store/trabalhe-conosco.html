@@ -43,6 +43,60 @@
                 <input type="email" name="email" id="email">
             </div>
 
+            <div class="input-wrapper">
+                <label for="tel">Telefone</label>
+                <input type="text" name="tel" id="tel">
+            </div>
+
+            <div class="input-wrapper">
+                <label for="departments">Departamentos</label>
+                <select name="departments" id="departments">
+                    <option selected disabled>Selecione uma opção</option>
+                    <option value="1">Marketing</option>
+                    <option value="2">Vendas</option>
+                    <option value="3">TI</option>
+                    <option value="4">Administrativo</option>
+                    <option value="5">Almoxarifado</option>
+                </select>
+            </div>
+
+            <div class="checkbox-wrapper">
+                <span>Disponibilidade</span>
+
+                <input type="checkbox" name="full-time" id="full-time">
+                <label for="full-time">Integral (8h)</label>
+
+                <input type="checkbox" name="part-time" id="part-time">
+                <label for="part-time">Meio período (4h)</label>
+
+                <input type="checkbox" name="freelancer" id="freelancer">
+                <label for="freelancer">Freelancer</label>
+            </div>
+
+            <div class="radio-wrapper">
+                <span>Qual a melhor forma para entrarmos em contato com você?</span>
+
+                <input type="radio" name="contact" id="contact-email" value="email">
+                <label for="contact-email">Email</label>
+
+                <input type="radio" name="contact" id="call" value="tel">
+                <label for="call">Ligação</label>
+
+                <input type="radio" name="contact" id="whatsapp" value="whatsapp">
+                <label for="whatsapp">WhatsApp</label>
+            </div>
+
+            <div class="textarea-wrapper">
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="Escreva a sua mensagem"></textarea>
+            </div>
+
+            <div class="file-wrapper">
+                <label for="resume">Curriculo</label>
+                <input type="file" name="resume" id="resume" accept=".doc, .docx, .pdf, image/*">
+            </div>
+            
+            <button type="submit">enviar</button>
         </form>
     </main>
 
