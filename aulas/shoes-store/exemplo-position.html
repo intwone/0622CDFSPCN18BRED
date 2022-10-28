@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        section {
+            margin: 126px auto;
+            width: 70%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding: 20px;
+            position: relative;
+            /* z-index: 5; */
+        }
+
+        div {
+            height: 100px;
+            width: 100px;
+            background-color: aquamarine;
+            border: 1px solid black;
+        }
+
+        header {
+            background-color: bisque;
+            height: 100px;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            z-index: 1;
+        }
+
+        section div:first-child {
+            background-color: blueviolet;
+            color: white;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        section div:last-child {
+            border: 2px dashed orange;
+            position: fixed;
+            bottom: 0;
+            margin: 15px;
+        }
+
+        section div:nth-child(6) {
+            background-color: chartreuse;
+        }
+
+        /* section div:nth-child(2) {
+            transition: .6s all;
+        } */
+
+        section div:nth-child(2):hover {
+            background-color: orange;
+            height: 150px;
+            width: 150px;
+            transition: .6s all;
+        }
+
+        section div:nth-child(2):not(:hover) {
+            height: 180px;
+            width: 120px;
+        }
+
+        header::before {
+            content: "Olá cassio";
+            /* background-color: blueviolet;
+            padding: 20px;
+            color: white;
+            display: flex; */
+        }
+
+        input {
+            transition: .2s all;
+        }
+
+        /* input:hover {
+            border: 2px solid orange;
+            height: 22px;
+        } */
+
+        input:focus {
+            outline: 2px solid orange;
+        }
+
+        section div:nth-child(4) {
+            transition: .3s all;
+        }
+
+        input:active {
+            background-color: blue;
+            color: red;
+            height: 50px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+    </header>
+
+    <section>
+        <div>1</div>
+        <div>2</div>
+        <input type="text" placeholder="Escreva o seu nome">
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+    </section>
+</body>
+</html>
