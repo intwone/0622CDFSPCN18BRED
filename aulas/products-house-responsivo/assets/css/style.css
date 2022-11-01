@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: whitesmoke;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 100%;
+    background-color: #6C4AB6;
+    color: white;
+
+    padding: 16px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    color: white;
+}
+
+header .container .logo a, header li a {
+    color: inherit;
+}
+
+header .container form {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .6s all;
+    
+}
+
+header .container form button {
+    display: grid;
+    place-items: center;
+}
+
+header .container form input[type="text"]:placeholder-shown {
+    display: none;
+}
+
+header .container form:hover {
+    width: 25%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.active {
+    display: block;
+}
+
+header .container form.active:hover input[type="text"]:placeholder-shown {
+    display: block;
+}
+
+header .container form input[type="text"] {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+header .container form span {
+    color: black;
+    cursor: pointer;
+}
+
+header .container ul {
+    display: flex;
+    list-style: none;
+
+    gap: 16px;
+}
+
+header .container ul li {
+    transition: .4s all;
+}
+
+header .container ul li:hover {
+    font-size: 20px;
+    border-bottom: 3px solid yellow;
+}
+
+header .container button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+header .container span {
+    color: white;
+}
+
+header .container .header--controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+header .container .header--controls span {
+    font-size: 32px;
+    transition: .6s all;
+}
+
+header .container .header--controls span:hover {
+    color: yellow;
+}
+
+/* header .container .menu {
+    display: none;
+} */
+
+main .banner {
+    width: 100%;
+    margin-top: 82px;
+}
+
+main .banner .glider {
+   text-align: center;
+}
+
+main .products {
+    width: 100%;
+    display: flex;
+    padding: 16px;
+
+    gap: 16px;
+
+    flex-wrap: wrap;
+}
+
+main .card-product {
+    width: 300px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    padding: 20px;
+   
+    transition: .2s all;
+
+    border-radius: 8px;
+}
+
+main .card-product:hover {
+    box-shadow: -1px 2px 12px 3px rgba(150,150,150,0.61);
+    -moz-box-shadow: -1px 2px 12px 3px rgba(150,150,150,0.61);
+    -webkit-box-shadow: -1px 2px 12px 3px rgba(150,150,150,0.61);
+}
+
+main .card-product img {
+    max-height: 300px;
+    transition: .3s all;
+}
+
+main .card-product h3 {
+    margin-top: 8px;
+}
+
+main .card-product button {
+    background-color: #8D72E1;
+    color: white;
+    font-weight: bold;
+
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+
+    transition: .3s all;
+}
+
+main .card-product button:hover {
+    background-color: #654dae;
+    box-shadow: none;
+}
+
+main .card-product img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    margin-top: 30px;
+    width: 100%;
+    background-color: #8D72E1;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    font-weight: bold;
+    color: white;
+}
+
+h1::selection, h2::selection, h3::selection, span::selection, p::selection, li a::selection, footer .container::selection {
+    background-color: yellow;
+    color: black;
+}
