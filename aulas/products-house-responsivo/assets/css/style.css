@@ -134,9 +134,9 @@ header .container .header--controls span:hover {
     color: yellow;
 }
 
-/* header .container .menu {
+header .container .menu {
     display: none;
-} */
+} 
 
 main .banner {
     width: 100%;
@@ -228,4 +228,48 @@ footer .container {
 h1::selection, h2::selection, h3::selection, span::selection, p::selection, li a::selection, footer .container::selection {
     background-color: yellow;
     color: black;
+}
+
+@media (max-width: 980px) {
+    main .products {
+        justify-content: center;
+    }
+
+    main .card-product {
+        width: 250px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .container form {
+        display: none;
+    }
+
+    header .container ul {
+        display: none;
+    }
+
+    header .container .header--controls {
+        display: none;
+    }
+
+    header .container .menu {
+        display: block;
+    } 
+
+    header .container .menu span {
+        font-size: 32px;
+    }
+
+    main .banner {
+        margin-top: 70px;
+    }
+
+    .banner .glider-prev, .banner .glider-next, .banner .dots {
+        display: none;
+    }
+
+    main .card-product {
+        width: 300px;
+    }
 }
