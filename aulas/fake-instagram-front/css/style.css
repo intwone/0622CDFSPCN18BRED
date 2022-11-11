@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.auth {
+  background: #fafafa;
+}
+
+a {
+  color: #00B7FF;
+}
+
+header {
+  height: 50px;
+  border-bottom: 0.5px solid #d7d7d7;
+  position: fixed;
+  background: #fff;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 10px;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  align-items: center;
+  flex-direction: column;
+}
+
+.content-auth {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 900px;
+  height: 100vh;
+  margin-top: 50px
+}
+
+header nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+header nav * {
+  margin: 0 5px;
+}
+
+.avatar-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: black;
+}
+
+#more {
+  border: 1px solid gray;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+#logo {
+  width: 120px;
+  display: flex;
+  /* margin: 0 auto; */
+}
+
+#logo img {
+  width: 100%;
+}
+
+.busca form {
+  background: #f7f7f7;
+  padding: 7px 29px;
+  color: gray;
+  border: 0.5px solid #bbbbbb;
+  border-radius: 4px;
+}
+
+.busca form input {
+  background: none;
+  border: none;
+}
+
+.card {
+  max-width: 464px;
+  display: flex;
+  margin: 20px;
+  flex-direction: column;
+  border: 1px solid #d7d7d7;
+  border-radius: 4px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.card-header div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-header div b {
+  margin-left: 10px;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-img img {
+  width: 100%;
+}
+
+.avatar {
+  width: 30px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card-itens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.likes {
+  display: flex;
+  align-items: center;
+}
+
+.likes b {
+  margin-left: 10px;
+}
+
+.card-comments {
+  font-size: 14px;
+}
+
+.form-comments {
+  padding: 10px;
+  border-top: 0.5px solid #d7d7d7;
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-comments input {
+  border: none;
+  width: 100%;
+}
+
+.form-comments input:focus,
+.form-comments .input:active {
+  border: none;
+  box-shadow: none;
+  outline: 0;
+}
+
+
+.form-comments button {
+  border: none;
+  background-color: none;
+  background: none;
+  color: blue;
+  padding: 10px;
+}
+
+.form-auth {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  background: #fff;
+  text-align: center;
+  justify-content: center;
+}
+
+.form-auth * {
+  margin: 10px 0;
+}
+
+.form-auth input {
+  background: #f7f7f7;
+  padding: 7px 29px;
+  color: gray;
+  border: 0.5px solid #bbbbbb;
+  border-radius: 4px;
+}
+
+.form-auth button {
+  border: 1px solid transparent;
+  background-color: #0095f6;
+  background-color: rgba(var(--d69, 0, 149, 246), 1);
+  padding: 10px 20px;
+  color: #fff;
+}
+
+.form-auth.card {
+  padding: 20px;
+}
+
+.register.card {
+  padding: 20px;
+}
+
+@media(max-width:560px) {
+  .busca {
+    display: none;
+  }
+
+  .content-auth {
+    justify-content: center;
+  }
+
+  #banner {
+    display: none;
+  }
+}

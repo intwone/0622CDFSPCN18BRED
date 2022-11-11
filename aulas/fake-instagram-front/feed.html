@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Fake Insta</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='stylesheet' href='/css/style.css' />
+
+  <script src="./js/feed.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="container header">
+      <div id="logo">
+        <img src="/img/logo.png">
+      </div>
+      <div class="busca">
+        <form>
+          <input type="search" class="search" placeholder="buscar usuarios">
+        </form>
+      </div>
+      <nav>
+        <a href="/publicar">
+          <img src="/img/icons/plus.svg" alt="Adicionar Publicação" title="Adicionar Publicação">
+        </a>
+        <a href="/home">
+          <img src="/img/icons/home.svg">
+        </a>
+        <a href="">
+          <div class="avatar-content">
+            <img class="avatar" src="/img/avatar-example.png">
+            <b>Nome do Usuário</b>
+          </div>
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main class="container content">
+    <div class="publications">
+      <div class="card" id="">
+        <div class="card-header">
+          <div>
+            <img class="avatar" src="/img/avatar-example.png">
+            <b>Ana Paula</b>
+          </div>
+          <img src="/img/icons/more-vertical.svg">
+        </div>
+        <div class="card-img">
+          <img src="/img/publication_example.jpg">
+        </div>
+        <div class='card-body'>
+          <div class="card-itens">
+            <div class="likes">
+              <img src="/img/icons/heart.svg" width="24px">
+              <b>1 likes</b>
+            </div>
+            <b>Postado no dia: 00/00/0000</b>
+          </div>
+          <div class="card-comments">
+            <p><b>Nome comentarista</b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris </p>
+          </div>
+        </div>
+        <form class="form-comments" action="/comentar" method="post">
+          <input type="text" hidden name="postId" value="">
+          <input type="text" placeholder="Adicione um comentário..." name="description">
+          <button type="submit">Comentar</button>
+        </form>
+      </div>
+      
+    </div>
+    <button id="more">Ver Mais</button>
+  </main>
+</body>
+
+</html>
