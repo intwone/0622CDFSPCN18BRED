@@ -1,0 +1,71 @@
+@import url('./global.css');
+
+main {
+    min-height: 70vh;
+}
+
+.form-register {
+    margin: 130px auto 0 auto;
+    width: 70%;
+
+    padding: 40px;
+    border: 2px solid #6C4AB6;
+    border-radius: 8px;
+    position: relative;
+    transition: .6s all;
+}
+
+.form-register, form h1 {
+    color: #6C4AB6;
+    font-weight: bold
+}
+
+.form-register form label, .form-register a {
+    color: #6C4AB6;
+    font-weight: 600;
+}
+
+.form-register form a {
+    /* text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; */
+}
+
+.form-register a:hover {
+    color: black!important;
+    border-bottom: 2px solid #8D72E1;
+}
+
+/* .form-register:hover {
+    top: -30px;
+    box-shadow: 3px 5px 5px 1px rgba(0, 0, 0, 0.25);
+    z-index: 4;
+} */
+
+.loading {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    z-index: 5;
+    display: none;
+}
+
+.loading.active {
+    display: block;
+}
+
+.loading .spinner-border {
+    width: 3rem;
+    height: 3rem;
+    z-index: 6;
+}
+
+@media (max-width: 768px) {
+    .form-register {
+        width: 90%;
+    }
+
+    .form-register form {
+        width: 100%;
+    }
+}

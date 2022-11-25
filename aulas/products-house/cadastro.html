@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./public/css/cadastro.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <script src="./public/js/cadastro.js" defer></script>
+    <title>Cadastro</title>
+</head>
+<body>
+    
+    
+    <div class="menu-mobile">
+        <section>
+            <ul>
+                <li>
+                    <a href="/index.html">Home</a>
+                </li>
+    
+                <li>
+                    <a href="/index.html">Carrinho</a>
+                </li>
+    
+                <li>
+                    <a href="/login.html">Login</a>
+                </li>
+    
+                <li>
+                    <a href="#">Categoria 1</a>
+                </li>
+    
+                <li>
+                    <a href="#">Categoria 2</a>
+                </li>
+    
+                <li>
+                    <a href="#">Categoria 3</a>
+                </li>
+            </ul>
+    
+            <button id="menu-mobile--close">
+                <span class="material-symbols-outlined">
+                    close
+                </span>
+            </button>
+        </section>
+    </div>
+  
+    <header>
+        <!-- Script de eventos do Header -->
+        <script src="./public/js/header.js" defer></script>
+        <!-- Script de eventos do Header -->
+
+        <div class="container">
+            <div class="logo">
+                <a href="/index.html">
+                    <h1>Products House</h1>
+                </a>
+            </div>
+
+            <form id="search">
+                <input type="text" name="q" id="search" autocomplete="off" placeholder="Buscar produtos">
+                <button type="submit">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+
+            </form>
+
+            <div class="header--controls">
+                <a href="/login.html">
+                    <button title="Login">
+                        <span class="material-symbols-outlined">
+                            login
+                        </span>
+                    </button>
+                </a>
+
+                <a href="/carrinho.html" target="_blank">
+                    <button title="Carrinho">
+                        <span class="material-symbols-outlined">
+                            shopping_cart
+                        </span>
+                    </button>
+                </a>
+            </div>
+
+            <button id="menu-mobile--open" class="menu">
+                <span class="material-symbols-outlined">
+                    menu
+                </span>
+            </button>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="form-register">
+            <form class="w-75 mx-auto">
+                <div class="loading">
+                    <div class="d-flex justify-content-center">
+                        <div class="spinner-border" role="status">
+                          <span class="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <h1 class="text-center mb-3">Cadastro</h1>
+
+                <div class="mb-3">
+                    <label for="name-register" class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="name-register" placeholder="Insira o seu nome completo">
+                </div>
+
+                <div class="mb-3">
+                  <label for="email-register" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email-register" placeholder="example@mail.com">
+                </div>
+
+                <div class="mb-3">
+                    <label for="cep-register" class="form-label">Cep</label>
+                    <input type="text" class="form-control" id="cep-register" placeholder="86027000">
+                </div>
+
+                <div class="mb-3">
+                    <label for="state-register" class="form-label">Estado</label>
+                    <input type="text" class="form-control" id="state-register" placeholder="PR">
+                </div>
+
+                <div class="mb-3">
+                    <label for="city-register" class="form-label">Cidade</label>
+                    <input type="text" class="form-control" id="city-register" placeholder="Londrina">
+                </div>
+
+                <div class="mb-3">
+                    <label for="street-register" class="form-label">Rua</label>
+                    <input type="text" class="form-control" id="street-register" placeholder="Insira a sua rua">
+                </div>
+
+                <div class="mb-3">
+                    <label for="address-number-register" class="form-label">Número</label>
+                    <input type="number" class="form-control" id="address-number-register" placeholder="123">
+                </div>
+
+                <div class="mb-3">
+                    <label for="neighborhood-register" class="form-label">Bairro</label>
+                    <input type="text" class="form-control" id="neighborhood-register" placeholder="Bairro Exemplo">
+                </div>
+
+                <div class="mb-3">
+                    <label for="telphone-register" class="form-label">Telefone (WhatsApp)</label>
+                    <input type="tel" class="form-control" id="telphone-register" placeholder="43912345678">
+                </div>
+
+
+                <div class="mb-3">
+                  <label for="password-register" class="form-label">Senha</label>
+                  <input type="password" class="form-control" id="password-register" placeholder="********">
+                </div>
+
+                <div class="mb-3 form-check d-flex justify-content-between flex-wrap">
+                    <div class="mb-2">
+                        <input type="checkbox" class="form-check-input" id="news-register">
+                        <label class="form-check-label" for="news-register">Deseja receber as novidades?</label>
+                    </div>
+
+                    <a href="/register.html" title="Não tem uma conta? Clique aqui e cadastre-se">Tem uma conta? Fazer Login</a>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
+              </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            © Products House 2022 - Todos os direitos reservados
+        </div>
+    </footer>
+</body>
+</html>
