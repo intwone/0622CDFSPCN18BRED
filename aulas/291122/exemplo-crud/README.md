@@ -4,8 +4,8 @@ O objetivo desta aula é demonstrar de forma básica como funciona um CRUD utili
 ## Atividade 1: Criando um servidor com express
 Nesta atividade iremos criar um seridor utilizando o framework do express.
 
--  [ ] Criar um projeto node com o nome: **exemplo-crud**
--  [ ] Executar o comando para criar o package.json:
+-  [x] Criar um projeto node com o nome: **exemplo-crud**
+-  [x] Executar o comando para criar o package.json:
 ```bash
 npm init -y
 ```
@@ -73,3 +73,10 @@ O CRUD são operacões que realizamos constantemente no backend, cada letra tem 
 | `/usuarios`      | `POST`     | Create       | Criar um novo usuário e devolver os dados do novo usuário criado       |          
 | `/usuarios/:id`  | `PUT`      | Update       | Atualizar os dados do usuário em que o id foi passado como parâmetro e devolver os dados atualizados |                                                                    |
 | `/usuarios/:id`  | `DELETE`   | Delete       | Deletar os dados do usuário em que o id foi passado como parâmetro                                                                       |
+
+
+### Criar a rota de usuários
+
+A rota que deve ser criada é:
+    /usuarios
+E deve retornar o array com os dados dos usuarios.
