@@ -1,0 +1,26 @@
+[
+  {
+    "id": "83e4138d-abe4-44eb-b6af-7186daf665bb",
+    "name": "Cassio",
+    "age": 29,
+    "status": true
+  },
+  {
+    "id": "34996e47-31ce-4f94-a5aa-8fd35cc2ad04",
+    "name": "Wendel",
+    "age": 24,
+    "status": false
+  },
+  {
+    "id": "e8e1034e-472c-4191-ab40-147daefe48cd",
+    "name": "Mario",
+    "age": 30,
+    "status": true
+  },
+  {
+    "id": "5fe38c7e-404d-44a1-9e31-b012bd084ac1",
+    "name": "Vini Jr",
+    "age": 22,
+    "status": true
+  }
+]
