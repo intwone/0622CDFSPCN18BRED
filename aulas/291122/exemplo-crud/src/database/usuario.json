@@ -1,0 +1,35 @@
+{
+    "usuarios": [
+        {
+            "id": 1,
+            "nome": "Wendel Cutrim dos Santos",
+            "email": "wendel@mail.com",
+            "senha": "123456"
+        },
+        {
+            "id": 2,
+            "nome": "Mario Luz",
+            "email": "mario@mail.com",
+            "senha": "123456"
+        },
+        {
+            "id": 3,
+            "nome": "Cassio Oliveira",
+            "email": "cassio@mail.com",
+            "senha": "123456"
+        },
+        {
+            "id": "75fd0b03-a1ce-4c4c-963a-ee24007aaf9a",
+            "nome": "Lucas",
+            "email": "lucas@mail.com",
+            "senha": "123456"
+        },
+        {
+            "id": "74a32319-c372-4c6e-8a6f-4001b0f4bd6b",
+            "nome": "Milene",
+            "email": "milene@mail.com",
+            "senha": "123456"
+        }
+    ],
+    "produtos": []
+}
