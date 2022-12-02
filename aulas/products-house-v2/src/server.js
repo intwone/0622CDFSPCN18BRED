@@ -1,14 +1,21 @@
 const express = require("express");
-const UsersController = require("./controllers/UsersController");
+const usersRouter = require('./routes/usersRouter');
+const homeRouter = require('./routes/homeRouter');
+const path = require('path');
 
 const server = express();
 const port = 4000;
-server.use(express.json());
 
-server.get("/users", UsersController.listAll);
-server.get("/users/:id", UsersController.listOne);
-server.post("/users", UsersController.create);
-server.delete("/users/:id", UsersController.delete);
+server.set('view engine', 'ejs');
+server.set('views', path.resolve("src", "views"));
+
+server.use(express.json());
+server.use(express.static(path.resolve("src", "public")));
+
+server.use(usersRouter);
+server.use(homeRouter);
+
+
 
 server.listen(port, () =>
   console.log(`Servidor rodando no http://localhost:${port}`)

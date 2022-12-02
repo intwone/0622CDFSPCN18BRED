@@ -5,8 +5,8 @@ Roadmap aula:
     Na aula de hoje iremos aprender como utilizar o template engine do EJS, para realizar a comunicação do front-end com o back-end e deixar as páginas dinâmicas de acordo com o resultado do back-end:
     
     1- Para conseguirmos alcançar o objetivo da aula de hoje, precisaremos mudar um pouco a estrutura do projeto, para isso será necessário:
-      ☐ Exercício: Dentro da pasta src, criar a pasta: database
-      ☐ Exercício: Dentro da pasta src, criar a pasta: views
+      ✔ Exercício: Dentro da pasta src, criar a pasta: database @done(22-12-01 21:06)
+      ✔ Exercício: Dentro da pasta src, criar a pasta: views @done(22-12-01 21:06)
       ☐ Exercício: Dentro da pasta utils, inserir o script que foi enviado: generateFakerCommerceDatabase.js
     
       1.1- Para o script funcionar, será necessário instalar as seguintes bibliotecas:
