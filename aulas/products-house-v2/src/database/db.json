@@ -121,7 +121,7 @@
             "price": "R$ 109,95",
             "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
             "active": true,
-            "stock": true
+            "stock": false
         },
         {
             "id": "15aef958-dbe2-4f05-9e1f-67ed2bb724f9",

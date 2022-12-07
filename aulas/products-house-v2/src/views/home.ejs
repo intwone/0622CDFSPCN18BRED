@@ -23,24 +23,7 @@
 <body>
     <%- include('./components/header.ejs') %>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="">Categoria 1</a>
-                </li>
-    
-                <li>
-                    <a href="">Categoria 2</a>
-                </li>
-    
-                <li>
-                    <a href="">Categoria 3</a>
-                </li>
-            </ul>
-        </div>
-
-    </nav>
+    <%- include('./components/navbar.ejs') %>
 
 
     <main class="container">
@@ -67,69 +50,29 @@
         </section>
 
         <section class="products">
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
-
-            <article class="card-product">
-                <img src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="">
-                <div>
-                    <span>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</span>
-                    <h3>R$ 999,00</h3>
-                </div>
-                <a href="#">Comprar</a>
-            </article>
+            <% products.forEach(product => { %>
+                <article class="card-product">
+                    <img src="<%= product.image %>" alt="">
+                    <div>
+                        <span>
+                            <%= product.name %>
+                        </span>
+                        <h3>
+                            <%= product.price %>
+                        </h3>
+                    </div>
+                    <a href="/produtos/<%=product.id%>" target="_blank">Comprar</a>
+                </article>
+            <% }) %> 
 
             
+
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            © Products House 2022 - Todos os direitos reservados
-        </div>
-    </footer>
+    <%- include('./components/footer.ejs') %>
+
+    
 </body>
 
 </html>

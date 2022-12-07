@@ -14,45 +14,42 @@
 <body>
     <%- include('./components/header.ejs') %>
 
-    <nav>
-        <div class="container">
-            <ul>
-                <li>
-                    <a href="">Categoria 1</a>
-                </li>
-    
-                <li>
-                    <a href="">Categoria 2</a>
-                </li>
-    
-                <li>
-                    <a href="">Categoria 3</a>
-                </li>
-            </ul>
-        </div>
+    <%- include('./components/navbar.ejs') %>
 
-    </nav>
 
     <main class="container">
         <section class="product">
-            <h2>Placa de Vídeo RTX 3070 MSI Ventus 3X Plus NVIDIA GeForce, 8GB GDDR6, LHR, DLSS, Ray Tracing - GeForce RTX 3070 VENTUS 3X PLUS 8G OC LHR</h2>
+            <h2><%= product.name %></h2>
             
             <div class="product__info">
                 <article class="product__image">
-                    <img src="https://images.kabum.com.br/produtos/fotos/377636/placa-de-video-msi-nvidia-geforce-rtx-3070-ventus-3x-plus-8gb-gddr6-lhr-dlss-ray-tracing-geforce-rtx-3070-ventus-3x-plus-8g-oc-lhr-_1663095435_g.jpg" alt="">
+                    <img src="<%= product.image %>" alt="">
                 </article>
     
                 <article class="product__owner">
                     <div class="product__owner-banner">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint asperiores rerum velit alias consectetur ex, illo, iure atque voluptates aperiam obcaecati qui eligendi libero nobis, tempora molestias dolores? Praesentium.
                     </div>
+                    
+                    <%#
+                        let status;
+                        if(product.stock) {
+                            status = "Em estoque"
+                        } else {
+                            status = "Sem estoque"
+                        }
+                    %> 
+                    
 
                     <p>
-                        Vendido e entregue por: <strong>Products House</strong> | <span id="stock">Em estoque</span>
+                        Vendido e entregue por: <strong>Products House</strong> | 
+                        <span id="stock">
+                            <%= product.stock ? "Em estoque" : "Sem Estoque" %>
+                        </span>
                     </p>
 
                     <div>
-                        <h2 class="price">R$ 3.474,99</h2>
+                        <h2 class="price"><%=product.price%></h2>
                         <button>
                             <span class="material-symbols-outlined">
                                 shopping_cart
@@ -81,25 +78,13 @@
             </button>
             <div class="panel">
                 <p>
-                    Placa de Vídeo MSI NVIDIA GeForce RTX 3070 Ventus 3X Plus
-                    Equipada com Ampere—a arquitetura RTX de 2ª geração da NVIDIA. Construído com RT Cores e Tensor Cores aprimorados, novos multiprocessadores de streaming e memória G6 de alta velocidade, ele oferece o poder de que você precisa para enfrentar os jogos mais exigentes.
-    
-                    O VENTUS traz um design focado no desempenho que mantém o essencial para realizar qualquer tarefa em mãos. Um arranjo de ventilador triplo capaz em um design industrial rígido permite que esta placa gráfica de aparência nítida se encaixe em qualquer construção.
-    
-                    Placa traseira de metal Escovado
-                    Fornece um acabamento visual limpo ao cartão. Também fortalece o cartão e, graças a algumas almofadas térmicas colocadas de maneira inteligente, ajuda a manter a temperatura baixa.
-    
-                    Juntando tudo
-                    O software MSI Center exclusivo da MSI ajuda você a obter o máximo de seus produtos MSI. Monitore, ajuste e otimize em tempo real com apenas alguns cliques.
+                    <%=product.description%>
                 </p>
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            © Products House 2022 - Todos os direitos reservados
-        </div>
-    </footer>
+    <%- include('./components/footer.ejs') %>
+
 </body>
 </html>
