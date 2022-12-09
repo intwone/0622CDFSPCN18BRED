@@ -44,89 +44,24 @@
                     </thead>
 
                     <tbody>
-                        <tr>
-                            <th scope="row">1</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="/produto.html" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="/editar-produto.html" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
+                        <% products.forEach(product => { %>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td><img class="thumb" src="<%= product.image%>" alt="" width="100px" height="100px"></td>
+                                <td><%= product.name%></td>
+                                <td><%= product.price%></td>
+                                <td><%= product.active ? "Habilitado" : "Desabilitado" %></td>
+                                <td><%= product.stock ? "Em estoque" : "Sem estoque" %></td>
+                                <td>
+                                    <a href="/produto.html" type="button" class="btn btn-primary">Abrir</a>
+                                    <a href="/admin/produtos/<%= product.id %>/editar" type="button" class="btn btn-secondary">Editar</a>
 
-                        <tr>
-                            <th scope="row">2</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">3</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">4</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">5</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row">6</th>
-                            <td><img class="thumb" src="https://images-americanas.b2w.io/produtos/01/00/img/1284356/1/1284356198P1.jpg" alt="" width="100px" height="100px"></td>
-                            <td>Cadeira Gamer Giratoria com Master Led Vermelha GT15 - DPX</td>
-                            <td>R$ 999,00</td>
-                            <td>Habilitado</td>
-                            <td>Em estoque</td>
-                            <td>
-                                <a href="" type="button" class="btn btn-primary">Abrir</a>
-                                <a href="" type="button" class="btn btn-secondary">Editar</a>
-                                <button type="button" class="btn btn-danger">Excluir</button>
-                            </td>
-                        </tr>
+                                    <form action="/admin/produtos/<%= product.id %>/deletar?_method=DELETE" method="POST">
+                                        <button type="submit" class="btn btn-danger">Excluir</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        <% }) %>
                     </tbody>
                 </table>
     

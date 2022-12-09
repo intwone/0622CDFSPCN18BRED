@@ -36,18 +36,18 @@
 
     <main class="container">
         <section class="form-login">
-            <form class="w-75 mx-auto">
+            <form class="w-75 mx-auto" action="/admin/login" method="POST">
                 <h1 class="text-center mb-3">Products House</h1>
                 <h2 class="text-center mb-3">Login</h2>
 
                 <div class="mb-3">
                   <label for="email-login" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email-login" placeholder="example@mail.com">
+                  <input type="email" class="form-control" id="email-login" name="email" placeholder="example@mail.com">
                 </div>
 
                 <div class="mb-3">
                   <label for="password-login" class="form-label">Senha</label>
-                  <input type="password" class="form-control" id="password-login" placeholder="********">
+                  <input type="password" class="form-control" id="password-login" name="password" placeholder="********">
                 </div>
 
                 <div class="mb-3 form-check d-flex justify-content-between flex-wrap">

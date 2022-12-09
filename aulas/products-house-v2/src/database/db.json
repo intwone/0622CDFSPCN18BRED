@@ -2,6 +2,20 @@
     "users": [
         {
             "id": "2cd9b5db-386b-4ed5-a77c-0aa6ac6714ac",
+            "name": "Cassio Oliveira",
+            "email": "cassio@gmail.com",
+            "password": "123456",
+            "isAdmin": true
+        },
+        {
+            "id": "2cd9b5db-386b-4ed5-a77c-0aa612312714ac",
+            "name": "Lucas",
+            "email": "lucas@gmail.com",
+            "password": "123456",
+            "isAdmin": false
+        },
+        {
+            "id": "2cd9b5db-386b-4ed5-a77c-0aa6ac6714ac",
             "name": "Doris Feeney",
             "email": "jazlyn_christiansen46@yahoo.com",
             "password": "$2a$10$JMrJQAshS1GV/Qiuf6IxsOxLiIysU50FXzOCPiA5UnSpX4MCuFCGe",
