@@ -58,7 +58,9 @@ const AdminController = {
     },
 
     storeProduto: (req, res) => {
-        const {name, price, image, active, stock, description} = req.body
+        const {name, price, active, stock, description} = req.body
+
+        const image = `/images/${req.file.filename}`
 
         const newProduct = {
             id: randomUUID(),
@@ -91,8 +93,7 @@ const AdminController = {
             description
         }
 
-        database.products.splice(indexProduct, 1, editedProduct)
-
+        database.products.splice(indexProduct, 1, editedProduct);
         return res.redirect('/admin/home')
     },
 
