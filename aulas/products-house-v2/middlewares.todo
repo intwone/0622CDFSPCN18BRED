@@ -1,0 +1,14 @@
+Atividade 1 - Middleware Global: 
+    Nesta atividade, iremos criar um middleware global para termos um controle de todas as requisições enviadas para o nosso servidor.
+    *Obs: todas as requisições deve ficar salvas em um arquivo .txt com o nome: requestLog no caminho: src > logs
+
+    Para atingir este objetivo, teremos que capturar as seguintes informações:
+        ✔ Ip do cliente @done(22-12-15 20:35)
+        ✔ Método HTTP @done(22-12-15 20:37)
+        ✔ Rota acessada @done(22-12-15 20:37)
+        ✔ Status code HTTP @done(22-12-15 22:03)
+        ✔ Hora que foi solicitada a requisição @done(22-12-15 22:03)
+        Exemplo de Saída: O cliente ::1 acessou a rota GET /admin/login - 200 em 15/12/2022 16:00.
+
+Atividade 2 - Middleware de rota:
+    ✔ Nesta atividade iremos transformar o multer em um middleware de rota. @done(22-12-15 22:03)

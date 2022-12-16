@@ -1,8 +1,8 @@
-const database = require('../database/db.json');
+const productsModel = require('../models/productsModel');
 
 const HomeController = {
     showHome: (req, res) => {
-        const products = database.products;
+        const products = productsModel.findAll();
 
         return res.render('home', {
             products
@@ -12,7 +12,7 @@ const HomeController = {
     showProduto: (req, res) => {
         const { id } = req.params;
 
-        const product = database.products.find(product => product.id === id);
+        const product = productsModel.findByPk(id)
 
 
         return res.render('produto', {product});

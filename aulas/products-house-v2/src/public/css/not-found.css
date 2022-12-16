@@ -1,0 +1,22 @@
+@import url('./global.css');
+
+.error {
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    justify-content: center;
+    align-items: center;
+}
+
+.error h1 {
+    font-size: 32px;
+}
+
+.error article {
+    text-align: center;
+}
+
+.error article img {
+    width: 70%;
+}
