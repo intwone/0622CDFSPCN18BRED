@@ -59,10 +59,10 @@ Para atingir esse objetivo será necessário:
 | Route      | Method | Description                       |
 | :--------- | :----- | :-------------------------------- |
 | `/`        | GET    | Deve renderizar a view `index`    |
-| `about`    | GET    | Deve renderizar a view `sobre`    |
+| `sobre`    | GET    | Deve renderizar a view `sobre`    |
 | `login`    | GET    | Deve renderizar a view `login`    |
-| `contact`  | GET    | Deve renderizar a view `contato`  |
-| `services` | GET    | Deve renderizar a view `servicos` |
+| `contato`  | GET    | Deve renderizar a view `contato`  |
+| `servicos` | GET    | Deve renderizar a view `servicos` |
 
 -   [ ] Criar o controller para tratar estas rotas
 
@@ -173,12 +173,12 @@ Para atingir esse objetivo será necessário:
 
     -   | Route                        | Method | Param          | Description                                 |
         | :--------------------------- | :----- | :------------- | :------------------------------------------ |
-        | `/admin/services`            | GET    |                | Deve renderizar a view `index (service)`    |
-        | `/admin/services/create`     | GET    |                | Deve renderizar a view `cadastro (service)` |
-        | `/admin/services/create`     | POST   |                |                                             |
-        | `/admin/services/:id/edit`   | GET    |                | Deve renderizar a view `editar (service)`   |
-        | `/admin/services/:id/edit`   | PUT    | `id: required` |                                             |
-        | `/admin/services/:id/delete` | DELETE | `id: required` | Deve renderizar a view `contato`            |
-        | `/admin/services/:id`        | GET    | `id: required` | Deve renderizar a view `servicos`           |
+        | `/admin/servicos`            | GET    |                | Deve renderizar a view `index (service)`    |
+        | `/admin/servicos/create`     | GET    |                | Deve renderizar a view `cadastro (service)` |
+        | `/admin/servicos/create`     | POST   |                |                                             |
+        | `/admin/servicos/:id/edit`   | GET    |                | Deve renderizar a view `editar (service)`   |
+        | `/admin/servicos/:id/edit`   | PUT    | `id: required` |                                             |
+        | `/admin/servicos/:id/delete` | DELETE | `id: required` | Deve renderizar a view `contato`            |
+        | `/admin/servicos/:id`        | GET    | `id: required` | Deve renderizar a view `servicos`           |
 
 -   [ ] **Obs**: Lembre-se que para trabalhar com requisições do tipo PATCH, PUT e DELETE, precisamos instalar a biblioteca `method override`
