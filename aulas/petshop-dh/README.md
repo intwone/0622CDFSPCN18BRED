@@ -23,15 +23,15 @@ Nesta atividade iremos criar o servidor, instalar as principais dependências qu
 
 Para atingir esse objetivo será necessário:
 
--   [ ] Iniciar um projeto node
--   [ ] Instalar o express
--   [ ] Criar a estrutura utilizando o padrão MVC
--   [ ] Criar uma pasta chamada **database** e dentro desta pasta criar o arquivo `db.json`
--   [ ] Instalar o nodemon como dependência de desenvolvimento
--   [ ] Criar scripts para startar a aplicação, deve conter os seguintes scripts:
-    -   [ ] **start**: A aplicação deve rodar utilizando pelo **_node_**
-    -   [ ] **dev**: A aplicação deve rodar utilizando o **_nodemon_**
--   [ ] Criar o entry point da aplicação com o nome `app.js`, configurar o servidor e criar a rota `/` que quando for solicitada deve enviar a seguinte mensagem (text ou json): **Express Works!**
+-   [x] Iniciar um projeto node
+-   [x] Instalar o express
+-   [x] Criar a estrutura utilizando o padrão MVC
+-   [x] Criar uma pasta chamada **database** e dentro desta pasta criar o arquivo `db.json`
+-   [x] Instalar o nodemon como dependência de desenvolvimento
+-   [x] Criar scripts para startar a aplicação, deve conter os seguintes scripts:
+    -   [x] **start**: A aplicação deve rodar utilizando pelo **_node_**
+    -   [x] **dev**: A aplicação deve rodar utilizando o **_nodemon_**
+-   [x] Criar o entry point da aplicação com o nome `app.js`, configurar o servidor e criar a rota `/` que quando for solicitada deve enviar a seguinte mensagem (text ou json): **Express Works!**
 
 #
 
@@ -43,18 +43,18 @@ Nesta atividade iremos criar as rotas do nosso servidor, criar os controllers e 
 
 Para atingir esse objetivo será necessário:
 
--   [ ] Instalar o ejs.
+-   [x] Instalar o ejs.
     -   Documentação do ejs: https://ejs.co/
--   [ ] Configurar o servidor para trabalhar com o template engine ejs
--   [ ] Informar ao servidor aonde está a nossa pasta de views
--   [ ] Configurar o servidor para que todas as reqisições seja em JSON
--   [ ] Informar ao servidor a pasta de arquivos estáticos (public)
--   [ ] Alterar a extensão das views de `.html` para `.ejs`
+-   [x] Configurar o servidor para trabalhar com o template engine ejs
+-   [x] Informar ao servidor aonde está a nossa pasta de views
+-   [x] Configurar o servidor para que todas as reqisições seja em JSON
+-   [x] Informar ao servidor a pasta de arquivos estáticos (public)
+-   [x] Alterar a extensão das views de `.html` para `.ejs`
 
 **Obs: Fique de olho nas importações dos arquivos das views, pois já informarmos para o servidor que ele tem uma pasta de arquivos públicos, ou seja, não precisamos passar o path para ir até ela**
 
--   [ ] Criar a pasta de rotas. Dentro da pasta de rotas criar os arquivos que achar necessários para rotas.
--   [ ] Na pasta de rotas criar o arquivo: `home.js` onde deve ter as seguintes rotas:
+-   [x] Criar a pasta de rotas. Dentro da pasta de rotas criar os arquivos que achar necessários para rotas.
+-   [x] Na pasta de rotas criar o arquivo: `home.js` onde deve ter as seguintes rotas:
 
 | Route      | Method | Description                       |
 | :--------- | :----- | :-------------------------------- |
@@ -64,7 +64,7 @@ Para atingir esse objetivo será necessário:
 | `contato`  | GET    | Deve renderizar a view `contato`  |
 | `servicos` | GET    | Deve renderizar a view `servicos` |
 
--   [ ] Criar o controller para tratar estas rotas
+-   [x] Criar o controller para tratar estas rotas
 
 #
 
@@ -76,11 +76,11 @@ Nesta atividade iremos utilizar o poder do ejs para realizar a renderização di
 
 Para atingir esse objetivo será necessário:
 
--   [ ] Olhe cada view e verifique quais elementos podemos transformar em componentes. Dentro da nossa camada da **View** crie uma pasta chamada `components` e dentro desta pasta, crie os arquivos que você julgar necessário componentizar e insira os componentes nas views que precisam utilizar ele.
+-   [x] Olhe cada view e verifique quais elementos podemos transformar em componentes. Dentro da nossa camada da **View** crie uma pasta chamada `components` e dentro desta pasta, crie os arquivos que você julgar necessário componentizar e insira os componentes nas views que precisam utilizar ele.
 
     -   **Dica: Componentizar é pouparmos trabalho de repetir o mesmo código em cada view, para isso, identifique os elementos que mais se repetem na página para transforma-lo em um componente.**
 
--   [ ] No arquivo db.json, vamos criar um banco de dados fake para conseguimos renderizar os dados, insira os seguintes dados nele:
+-   [x] No arquivo db.json, vamos criar um banco de dados fake para conseguimos renderizar os dados, insira os seguintes dados nele:
 
 ```JSON
 {
@@ -141,9 +141,9 @@ Para atingir esse objetivo será necessário:
 }
 ```
 
--   [ ] Na camada model, crie o arquivo; `Service.js` neste arquivo deve ficar a lógica para consular o banco de dados
--   [ ] Crie o método findAll() que retorne todos os serviços.
-    -   [ ] Obs: Os dados do banco de dados devem ser mapeados da seguinte maneira:
+-   [x] Na camada model, crie o arquivo; `Service.js` neste arquivo deve ficar a lógica para consular o banco de dados
+-   [x] Crie o método findAll() que retorne todos os serviços.
+    -   [x] Obs: Os dados do banco de dados devem ser mapeados da seguinte maneira:
         -   ```javascript
               {
                   id: ...,
@@ -153,8 +153,8 @@ Para atingir esse objetivo será necessário:
                   imagem: ...
               }
             ```
--   [ ] Importar o service no controller `HomeController` e utilizar o método para retornar os serviços.
--   [ ] Renderizar os serviços cadastrados no banco de dados na view de serviços.
+-   [x] Importar o service no controller `HomeController` e utilizar o método para retornar os serviços.
+-   [x] Renderizar os serviços cadastrados no banco de dados na view de serviços.
 
 #
 
