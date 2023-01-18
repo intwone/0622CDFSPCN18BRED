@@ -1,3 +1,5 @@
+const Servico = require("../model/Servico")
+
 const HomeController = {
     showHomePage: (req, res) => {
         return res.render("index");
@@ -17,8 +19,9 @@ const HomeController = {
     },
 
     showServicos: (req, res) => {
-        return res.render("servicos");
+        const servicos = Servico.findAll();
 
+        return res.render("servicos", { servicos });
     },
 
 }
