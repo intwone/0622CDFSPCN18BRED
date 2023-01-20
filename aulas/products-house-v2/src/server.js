@@ -1,6 +1,7 @@
 // importações
 const express = require("express");
 const methodOverride = require('method-override')
+const session = require("express-session");
 
 const usersRouter = require('./routes/usersRouter');
 const homeRouter = require('./routes/homeRouter');
@@ -23,6 +24,12 @@ server.use(express.urlencoded({ extended: false }))
 server.use(methodOverride('_method'))
 
 server.use(express.static(path.resolve("src", "public")));
+
+server.use(session({
+  secret: 'keyboard cat',
+  resave: false,
+  saveUninitialized: true,
+}));
 
 /* server.use(testeMiddleware); */
 server.use(requestLog);

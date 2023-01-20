@@ -5,48 +5,48 @@ Roadmap aula:
   Atividade 1 - Cadastro:
     Nesta atividade iremos criar o model de usuário e configurar as rotas para cadastrar um usuário, para atingir esse objetivo será necessário:
       
-      ☐ Criar o model com o nome User
-        ☐ Criar os seguintes métodos no model:
+      ✔ Criar o model com o nome User @done(23-01-19 20:41)
+        ✔ Criar os seguintes métodos no model: @done(23-01-19 20:41)
 
-          ☐ findOne: Deve receber o email como parâmetro e retornar o objeto do usuário que for igual ao e-mail
+          ✔ findOne: Deve receber o email como parâmetro e retornar o objeto do usuário que for igual ao e-mail @done(23-01-19 20:06)
           
-          ☐ create: Este método deve receber um objeto como parâmetro e criar um novo usuário no nosso banco de dados. Lembre-se de criar o id, fique a vontade para utilizar a biblioteca crypto ou uuid.
+          ✔ create: Este método deve receber um objeto como parâmetro e criar um novo usuário no nosso banco de dados. Lembre-se de criar o id, fique a vontade para utilizar a biblioteca crypto ou uuid. @done(23-01-19 20:13)
       
-        ☐ No arquivo authRouter, criar a rota do tipo POST para enviar os dados necessários para cadastrar um usuário
+        ✔ No arquivo authRouter, criar a rota do tipo POST para enviar os dados necessários para cadastrar um usuário @done(23-01-19 20:13)
 
-        ☐ No front (cadastro.ejs) comentar a linha que importa o script de validação do CEP e os demais inputs que não são necessários para o cadastro. (Deixar somente os inputs de: Nome, email e senha)
+        ✔ No front (cadastro.ejs) comentar a linha que importa o script de validação do CEP e os demais inputs que não são necessários para o cadastro. (Deixar somente os inputs de: Nome, email e senha) @done(23-01-19 20:41)
 
-        ☐ No arquivo AuthController, criar o método store, esse método deve capturar os dados que estão vindo do formulário de cadastro, verificar se o email já está cadastrado no banco de dados (caso estiver cadastado, renderizar a view de cadastro e exibir uma mensagem de erro falando: Não foi possível realizar a operação) caso não estiver cadastrado, deve realizar o cadastro no banco (utilizando o model) e após o cadastro, redirecionar o usuário para a rota de login.
+        ✔ No arquivo AuthController, criar o método store, esse método deve capturar os dados que estão vindo do formulário de cadastro, verificar se o email já está cadastrado no banco de dados (caso estiver cadastado, renderizar a view de cadastro e exibir uma mensagem de erro falando: Não foi possível realizar a operação) caso não estiver cadastrado, deve realizar o cadastro no banco (utilizando o model) e após o cadastro, redirecionar o usuário para a rota de login. @done(23-01-19 20:41)
         *Obs: Lembre-se que a senha do usuário deve ser criptografada no banco, para isso utilize a biblioteca do bcryptjs.
 
   Atividade 2 - Login:
     Nesta atividade, iremos realizar o login de usuários cadastrado no banco de dados, para isso será necessário:
-      ☐ No arquivo authRouter, criar a rota do tipo POST para enviar os dados necessários para logar um  usuário.
+      ✔ No arquivo authRouter, criar a rota do tipo POST para enviar os dados necessários para logar um  usuário. @done(23-01-19 20:56)
 
-      ☐ No AuthController, criar o método login, este método deve:
-        ☐ Capturar os dados para logar um usuário
+      ✔ No AuthController, criar o método login, este método deve: @done(23-01-19 21:56)
+        ✔ Capturar os dados para logar um usuário @done(23-01-19 21:01)
 
-        ☐ Verificar se o usuário tem cadastrado no banco de dados, utilizando o model.
+        ✔ Verificar se o usuário tem cadastrado no banco de dados, utilizando o model. @done(23-01-19 21:01)
 
-        ☐ Verificar se a senha que foi digitada no input está de acordo com a senha que foi cadastrada no banco de dados.
+        ✔ Verificar se a senha que foi digitada no input está de acordo com a senha que foi cadastrada no banco de dados. @done(23-01-19 21:04)
 
-        ☐ Se o usuário não existir no banco de dados ou a senha estiver incorreta, renderizar a view de login novamente exibindo o seguinte erro na tela: Email já cadastrado ou senha incorreta.
+        ✔ Se o usuário não existir no banco de dados ou a senha estiver incorreta, renderizar a view de login novamente exibindo o seguinte erro na tela: Email já cadastrado ou senha incorreta. @done(23-01-19 21:10)
 
-        ☐ Se tudo estiver certo, redirecionar o usuário para a tela home
+        ✔ Se tudo estiver certo, redirecionar o usuário para a tela home @done(23-01-19 21:10)
     
   Atividade 3 - Exibindo o nome do usuário no Header:
     Nesta atividade iremos exibir o nome do usuário no header, para conseguir isso, iremos implementar a session, essa atividade será realizada junto com o professor:
     
-      ☐ Instalar o express-session
-      ☐ Salvar os dados do usuário na session
-      ☐ Criar o middleware isAdmin, onde ele deve inserir os dados do usuário no objeto locals do response.
-      ☐ Exibir o nome do usuário no header.
+      ✔ Instalar o express-session @done(23-01-19 21:24)
+      ✔ Salvar os dados do usuário na session @done(23-01-19 21:24)
+      ✔ Criar o middleware isLogin, onde ele deve inserir os dados do usuário no objeto locals do response. @done(23-01-19 21:55)
+      ✔ Exibir o nome do usuário no header. @done(23-01-19 21:56)
 
   Atividade 4 - Protegendo rotas de admin:
     Nesta atividade iremos proteger as nossas rotas de admin:
-      ☐ Criar o middleware isAdmin, ele deve verificar se existe a seção e se o usuário que está na seção é do tipo Administrador, caso for, permitir o acesso senão, redirecionar para a rota da homepage.
+      ✔ Criar o middleware isAdmin, ele deve verificar se existe a seção e se o usuário que está na seção é do tipo Administrador, caso for, permitir o acesso senão, redirecionar para a rota da homepage. @done(23-01-19 21:56)
 
-      ☐ Aplicar o middleware nas rotas de admin e fazer testes com usuários que são administrador e não são administrador
+      ✔ Aplicar o middleware nas rotas de admin e fazer testes com usuários que são administrador e não são administrador @done(23-01-19 21:56)
 
   Desafio:
     ☐ Criar a rota /logout do tipo get e no AuthController criar o método logout para destruir a seção do usuário logal quando clicar no botão de logout

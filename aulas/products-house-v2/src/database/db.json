@@ -1,1 +1,192 @@
-{"users":[{"id":"2cd9b5db-386b-4ed5-a77c-0aa6ac6714ac","name":"Cassio Oliveira","email":"cassio@gmail.com","password":"123456","isAdmin":true},{"id":"2cd9b5db-386b-4ed5-a77c-0aa612312714ac","name":"Lucas","email":"lucas@gmail.com","password":"123456","isAdmin":false},{"id":"2cd9b5db-386b-4ed5-a77c-0aa6ac6714ac","name":"Doris Feeney","email":"jazlyn_christiansen46@yahoo.com","password":"$2a$10$JMrJQAshS1GV/Qiuf6IxsOxLiIysU50FXzOCPiA5UnSpX4MCuFCGe","isAdmin":false},{"id":"e76832a2-a1bc-49fc-9a93-94c85921a512","name":"Stacey Bednar II","email":"christy_veum@yahoo.com","password":"$2a$10$nhC.oDCUe9lI95ojQkVr4eUq4XuTQ/29T2WwS9NdQ7uy25jxngvBa","isAdmin":false},{"id":"470f6aee-890f-472b-89b3-e89d2b2c5e71","name":"Cornelius Barton","email":"leonie23@hotmail.com","password":"$2a$10$SyckTiVw9tSNauS/PcybNOk30ppeaGI9y74wtEviEX.YHrFsO9iAO","isAdmin":false},{"id":"82e54adf-cd4d-40d0-b005-13c671714cd2","name":"Ms. Otis Kovacek","email":"ryann_heidenreich89@yahoo.com","password":"$2a$10$PgHfPoyrT16HH9wEZkly.OOtGUYdcO0WY1hj.7tArMBCdH5F3YcrK","isAdmin":false},{"id":"a9f98aeb-05a8-402b-b917-86e97ac6def3","name":"Tanya Schuster","email":"mathew.gislason@yahoo.com","password":"$2a$10$ldUphJ5NBhwA5z6lm3fkM.mIEGaREvgLA/KtEwDeTxNbYZ55uyIdu","isAdmin":false},{"id":"4b080237-3781-44c6-9dd8-81a21fe00c16","name":"Miss Edmond Franecki","email":"edgar.raynor@gmail.com","password":"$2a$10$8IxKD7wABgi6XHXqK0J0uOQiTJCvWFgwIAVsqLtLfio4Wv8ffDebm","isAdmin":false},{"id":"5f127b53-74a2-43d8-a548-929c65cd19b1","name":"Johnnie Grimes","email":"carole93@yahoo.com","password":"$2a$10$/BX6TtlMUzo.EtR/Iarf1e0O52..ur53grDWvBbjL3tWVkaRocz1y","isAdmin":false},{"id":"538077fe-4448-418d-a20a-4f3a2755aa54","name":"Dr. Carla Russel","email":"eileen.fahey@yahoo.com","password":"$2a$10$EG4HsseICBZH4Vjq4jsDbOuhVQTFmCknFV8CnZKICzNrPDQKgoWw2","isAdmin":false},{"id":"3cbe267a-bdd1-4037-8e9e-0d982d40d6c1","name":"Salvatore Brekke","email":"susanna.schaden@yahoo.com","password":"$2a$10$bZ2XHqYB8kcNj5ghkObhx.NHNT8K/N04TlgAMP0Nz7/J3TbaYTCDq","isAdmin":false},{"id":"120dca10-e869-4f44-81c1-090c33fa752e","name":"Claude Goldner","email":"chesley.kling@yahoo.com","password":"$2a$10$RDewYfQXQGKDkgkEOjzjE.ajWpdrAz8A3mb1rNwMbcU0QQajTGYa2","isAdmin":false},{"id":"b3f4bb5f-d4a6-4612-99d3-376be72923cf","name":"Courtney Ebert","email":"max70@yahoo.com","password":"$2a$10$Qe1m4hXdc/QC8iuGyYaJ9eSdZ9voRIk2b.93Cn5waZwRm170IOPdW","isAdmin":false},{"id":"43fd87a0-5a87-4792-9d0d-cabbb0715149","name":"Connie Kreiger","email":"donna_ritchie37@hotmail.com","password":"$2a$10$Z9UN4tzl2HozGDc9JlZdZu5R1BeOyN2Gug8etjxcjR6AKpdQGXisC","isAdmin":false},{"id":"d280a9b2-0f84-4b09-abaa-577b979462c7","name":"Jacquelyn Wiegand MD","email":"emmy_anderson@gmail.com","password":"$2a$10$S8sgTwRd4dgu7evTXCLABu9UTdbq.kTHO12xVkIdsr/R2alJshsly","isAdmin":false},{"id":"40d528d8-8ca7-4328-b643-b1f2f4830eda","name":"Ms. Jeremy Mohr","email":"dylan_schuppe98@hotmail.com","password":"$2a$10$wAdYZoI1YYvxm8JN6xXeqe711nnEV4l3hlxxVhh8dPGlKjfBud1FS","isAdmin":false},{"id":"492c270e-c722-4693-947a-af1d6e306c87","name":"Cecelia Smith","email":"jaycee.bode@hotmail.com","password":"$2a$10$D3LRyAy3JA/X3epCCJzcUOl7I0Sh9XvRwCHg0kl4km3MX.V4U2n6a","isAdmin":false},{"id":"a7896ee3-d4b2-495e-bf54-54754c20da41","name":"Raymond O'Conner","email":"laverna15@gmail.com","password":"$2a$10$Yo.NqNtXOQTkz39LCUc9B.VKocC4kNwwuGlLxB7ufwcueNWpl.tcy","isAdmin":false}],"products":[{"id":"92a202f8-998f-4257-aacf-796019bf0166","name":"Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops","description":"Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday","price":"R$ 109,95","image":"https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg","active":true,"stock":false},{"id":"15aef958-dbe2-4f05-9e1f-67ed2bb724f9","name":"Mens Casual Premium Slim Fit T-Shirts ","description":"Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.","price":"R$ 22,30","image":"https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg","active":true,"stock":true},{"id":"136f5d61-ad14-4535-8977-a3a6f8dbeb08","name":"Mens Cotton Jacket","description":"great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.","price":"R$ 55,99","image":"https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg","active":true,"stock":true},{"id":"e78c9a38-cd03-47fd-b679-ebf90072de7c","name":"Mens Casual Slim Fit","description":"The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.","price":"R$ 15,99","image":"https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg","active":true,"stock":true},{"id":"0bde22e2-796b-404e-ba55-bdfd50fa5304","name":"John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet","description":"From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.","price":"R$ 695,00","image":"https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg","active":true,"stock":true},{"id":"50056d2a-402b-4bd9-8f54-f85363f9f2c4","name":"Solid Gold Petite Micropave ","description":"Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.","price":"R$ 168,00","image":"https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg","active":true,"stock":true},{"id":"00e87921-afb0-4e71-aa32-86acf2f68903","name":"White Gold Plated Princess","description":"Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...","price":"R$ 9,99","image":"https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg","active":true,"stock":true},{"id":"7582011a-faa1-452e-885a-6aeee4eb807a","name":"Pierced Owl Rose Gold Plated Stainless Steel Double","description":"Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel","price":"R$ 10,99","image":"https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg","active":true,"stock":true},{"id":"23da4a13-6b39-413c-adbc-fe2cf4f75e28","name":"WD 2TB Elements Portable External Hard Drive - USB 3.0 ","description":"USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system","price":"R$ 64,00","image":"https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg","active":true,"stock":true},{"id":"bde58f47-421c-45e2-95aa-d20a850dec72","name":"SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s","description":"Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)","price":"R$ 109,00","image":"https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg","active":true,"stock":true},{"id":"4b2d1d2d-bea0-4c4e-9fdf-9157fa376c3d","name":"Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5","description":"3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.","price":"R$ 109,00","image":"https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg","active":true,"stock":true},{"id":"bbd19b3b-353c-4951-8902-d6815e885fdf","name":"WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive","description":"Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty","price":"R$ 114,00","image":"https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg","active":true,"stock":true},{"id":"b0dd9739-ca3d-43f5-b7f7-020b795cefed","name":"Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin","description":"21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz","price":"R$ 599,00","image":"https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg","active":true,"stock":true},{"id":"1ac65049-1e33-4055-8a39-dda77726e826","name":"Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ","description":"49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag","price":"R$ 999,99","image":"https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg","active":true,"stock":true},{"id":"10f8402f-f611-4e2e-b465-696e29633ee5","name":"BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats","description":"Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates","price":"R$ 56,99","image":"https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg","active":true,"stock":true},{"id":"89d4d13a-d0cd-4971-ba10-74e7ab13d5b2","name":"Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket","description":"100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON","price":"R$ 29,95","image":"https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg","active":true,"stock":true},{"id":"14d18e21-3683-4d52-b614-04f258d6b3a6","name":"Imac","price":"7000","image":"/images/1671151474405_produto_imac.jpg","active":"on","stock":"on","description":"Computador da Apple"}]}
+{
+    "users": [{
+            "id": "2cd9b5db-386b-4ed5-a77c-0aa6ac6714ac",
+            "name": "Cassio Oliveira",
+            "email": "cassio@gmail.com",
+            "password": "$2a$10$eDB.pn.wD247Vc8/Y0Nz2.WOtrWsqezV2ewY.pPPApyyOl7qiCYce",
+            "isAdmin": true
+        },
+        {
+            "id": "2cd9b5db-386b-4ed5-a77c-0aa612312714ac",
+            "name": "Lucas",
+            "email": "lucas@gmail.com",
+            "password": "123456",
+            "isAdmin": false
+        },
+        {
+            "id": "65af5a5c-e751-4968-8034-aa3e43361537",
+            "name": "Wendel",
+            "email": "wendel@mail.com",
+            "password": "$2a$10$eDB.pn.wD247Vc8/Y0Nz2.WOtrWsqezV2ewY.pPPApyyOl7qiCYce",
+            "isAdmin": false
+        },
+        {
+            "id": "759a24d3-f418-4eb7-adfb-dbc51ff46101",
+            "name": "Henrique",
+            "email": "henrique@mail.com",
+            "password": "$2a$10$Ewye9hbWpbRP9fQxEVNlheooxvl4wHw2vavvWOCr1mAqYcUsJALUm",
+            "isAdmin": false
+        },
+        {
+            "id": "817d2b4c-d94f-4cd1-9b16-b5eca18733ac",
+            "name": "emerson",
+            "email": "emerson@mail.com",
+            "password": "$2a$10$FadOsNLM0OtcXMJlGsmP2uGc6a7/J3fIVJ9vaqMaNjA/ydiAwz9je",
+            "isAdmin": false
+        }
+    ],
+    "products": [{
+            "id": "92a202f8-998f-4257-aacf-796019bf0166",
+            "name": "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+            "description": "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
+            "price": "R$ 109,95",
+            "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+            "active": true,
+            "stock": false
+        },
+        {
+            "id": "15aef958-dbe2-4f05-9e1f-67ed2bb724f9",
+            "name": "Mens Casual Premium Slim Fit T-Shirts ",
+            "description": "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing. And Solid stitched shirts with round neck made for durability and a great fit for casual fashion wear and diehard baseball fans. The Henley style round neckline includes a three-button placket.",
+            "price": "R$ 22,30",
+            "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "136f5d61-ad14-4535-8977-a3a6f8dbeb08",
+            "name": "Mens Cotton Jacket",
+            "description": "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors. Good gift choice for you or your family member. A warm hearted love to Father, husband or son in this thanksgiving or Christmas Day.",
+            "price": "R$ 55,99",
+            "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "e78c9a38-cd03-47fd-b679-ebf90072de7c",
+            "name": "Mens Casual Slim Fit",
+            "description": "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on the product description.",
+            "price": "R$ 15,99",
+            "image": "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "0bde22e2-796b-404e-ba55-bdfd50fa5304",
+            "name": "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+            "description": "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl. Wear facing inward to be bestowed with love and abundance, or outward for protection.",
+            "price": "R$ 695,00",
+            "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "50056d2a-402b-4bd9-8f54-f85363f9f2c4",
+            "name": "Solid Gold Petite Micropave ",
+            "description": "Satisfaction Guaranteed. Return or exchange any order within 30 days.Designed and sold by Hafeez Center in the United States. Satisfaction Guaranteed. Return or exchange any order within 30 days.",
+            "price": "R$ 168,00",
+            "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "00e87921-afb0-4e71-aa32-86acf2f68903",
+            "name": "White Gold Plated Princess",
+            "description": "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for Her. Gifts to spoil your love more for Engagement, Wedding, Anniversary, Valentine's Day...",
+            "price": "R$ 9,99",
+            "image": "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "7582011a-faa1-452e-885a-6aeee4eb807a",
+            "name": "Pierced Owl Rose Gold Plated Stainless Steel Double",
+            "description": "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
+            "price": "R$ 10,99",
+            "image": "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "23da4a13-6b39-413c-adbc-fe2cf4f75e28",
+            "name": "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+            "description": "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High Capacity; Compatibility Formatted NTFS for Windows 10, Windows 8.1, Windows 7; Reformatting may be required for other operating systems; Compatibility may vary depending on user’s hardware configuration and operating system",
+            "price": "R$ 64,00",
+            "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "bde58f47-421c-45e2-95aa-d20a850dec72",
+            "name": "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+            "description": "Easy upgrade for faster boot up, shutdown, application load and response (As compared to 5400 RPM SATA 2.5” hard drive; Based on published specifications and internal benchmarking tests using PCMark vantage scores) Boosts burst write performance, making it ideal for typical PC workloads The perfect balance of performance and reliability Read/write speeds of up to 535MB/s/450MB/s (Based on internal testing; Performance may vary depending upon drive capacity, host device, OS and application.)",
+            "price": "R$ 109,00",
+            "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "4b2d1d2d-bea0-4c4e-9fdf-9157fa376c3d",
+            "name": "Silicon Power 256GB SSD 3D NAND A55 SLC Cache Performance Boost SATA III 2.5",
+            "description": "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootup and improved overall system performance. The advanced SLC Cache Technology allows performance boost and longer lifespan 7mm slim design suitable for Ultrabooks and Ultra-slim notebooks. Supports TRIM command, Garbage Collection technology, RAID, and ECC (Error Checking & Correction) to provide the optimized performance and enhanced reliability.",
+            "price": "R$ 109,00",
+            "image": "https://fakestoreapi.com/img/71kWymZ+c+L._AC_SX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "bbd19b3b-353c-4951-8902-d6815e885fdf",
+            "name": "WD 4TB Gaming Drive Works with Playstation 4 Portable External Hard Drive",
+            "description": "Expand your PS4 gaming experience, Play anywhere Fast and easy, setup Sleek design with high capacity, 3-year manufacturer's limited warranty",
+            "price": "R$ 114,00",
+            "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "b0dd9739-ca3d-43f5-b7f7-020b795cefed",
+            "name": "Acer SB220Q bi 21.5 inches Full HD (1920 x 1080) IPS Ultra-Thin",
+            "description": "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility for VESA Mount Refresh Rate: 75Hz - Using HDMI port Zero-frame design | ultra-thin | 4ms response time | IPS panel Aspect ratio - 16: 9. Color Supported - 16. 7 million colors. Brightness - 250 nit Tilt angle -5 degree to 15 degree. Horizontal viewing angle-178 degree. Vertical viewing angle-178 degree 75 hertz",
+            "price": "R$ 599,00",
+            "image": "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "1ac65049-1e33-4055-8a39-dda77726e826",
+            "name": "Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED ",
+            "description": "49 INCH SUPER ULTRAWIDE 32:9 CURVED GAMING MONITOR with dual 27 inch screen side by side QUANTUM DOT (QLED) TECHNOLOGY, HDR support and factory calibration provides stunningly realistic and accurate color and contrast 144HZ HIGH REFRESH RATE and 1ms ultra fast response time work to eliminate motion blur, ghosting, and reduce input lag",
+            "price": "R$ 999,99",
+            "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "10f8402f-f611-4e2e-b465-696e29633ee5",
+            "name": "BIYLACLESEN Women's 3-in-1 Snowboard Jacket Winter Coats",
+            "description": "Note:The Jackets is US standard size, Please choose size as your usual wear Material: 100% Polyester; Detachable Liner Fabric: Warm Fleece. Detachable Functional Liner: Skin Friendly, Lightweigt and Warm.Stand Collar Liner jacket, keep you warm in cold weather. Zippered Pockets: 2 Zippered Hand Pockets, 2 Zippered Pockets on Chest (enough to keep cards or keys)and 1 Hidden Pocket Inside.Zippered Hand Pockets and Hidden Pocket keep your things secure. Humanized Design: Adjustable and Detachable Hood and Adjustable cuff to prevent the wind and water,for a comfortable fit. 3 in 1 Detachable Design provide more convenience, you can separate the coat and inner as needed, or wear it together. It is suitable for different season and help you adapt to different climates",
+            "price": "R$ 56,99",
+            "image": "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "89d4d13a-d0cd-4971-ba10-74e7ab13d5b2",
+            "name": "Lock and Love Women's Removable Hooded Faux Leather Moto Biker Jacket",
+            "description": "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort / 2 pockets of front, 2-For-One Hooded denim style faux leather jacket, Button detail on waist / Detail stitching at sides, HAND WASH ONLY / DO NOT BLEACH / LINE DRY / DO NOT IRON",
+            "price": "R$ 29,95",
+            "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+            "active": true,
+            "stock": true
+        },
+        {
+            "id": "14d18e21-3683-4d52-b614-04f258d6b3a6",
+            "name": "Imac",
+            "price": "7000",
+            "image": "/images/1671151474405_produto_imac.jpg",
+            "active": "on",
+            "stock": "on",
+            "description": "Computador da Apple"
+        }
+    ]
+}

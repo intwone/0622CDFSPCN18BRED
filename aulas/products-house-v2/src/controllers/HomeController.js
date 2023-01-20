@@ -7,6 +7,7 @@ const HomeController = {
         return res.render('home', {
             products
         })
+
     },
 
     showProduto: (req, res) => {
@@ -15,7 +16,7 @@ const HomeController = {
         const product = productsModel.findByPk(id)
 
 
-        return res.render('produto', {product});
+        return res.render('produto', { product });
     }
 };
 
