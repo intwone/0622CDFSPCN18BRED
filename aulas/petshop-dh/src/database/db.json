@@ -1,8 +1,9 @@
 {
-    "services": [{
+    "services": [
+        {
             "id": 1,
             "name": "Banho e tosa",
-            "price": 70.0,
+            "price": 70,
             "description": "O melhor serviço de banho e tosa da cidade!",
             "image": "https://www.revistapetcenter.com.br/wp-content/uploads/2022/07/petcenter-241-anuario-banho-e-tosa-renta%CC%81vel.jpg"
         },
@@ -33,10 +34,31 @@
             "price": 150.98,
             "description": "Realizamos atendimeto médico ao seu pet com os melhores veterinários da cidade.",
             "image": "https://fresh4pet.com.br/wp-content/uploads/2020/08/foto-blog-24-agosto-1024x756.jpg"
+        },
+        {
+            "id": "54367362-3278-468b-b8d9-698df5527a10",
+            "name": "Teste",
+            "price": 25,
+            "description": "teste de cadastro",
+            "image": "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png"
+        },
+        {
+            "id": "e984ed66-b580-46cd-9d0d-ec8573631bcc",
+            "name": "Teste",
+            "price": 25.14,
+            "description": "teste de cadastro",
+            "image": "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png"
+        },
+        {
+            "id": "421ea205-72e7-4f48-9c9d-5a0c2b4c84af",
+            "name": "Teste editado 2",
+            "description": "editado 2",
+            "price": "50.99",
+            "image": "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png"
         }
-
     ],
-    "users": [{
+    "users": [
+        {
             "id": 1,
             "firstName": "John",
             "lastName": "Doe",
