@@ -166,10 +166,10 @@ Nesta atividade iremos criar um crud de serviços
 
 Para atingir esse objetivo será necessário:
 
--   [ ] Criar a view de admin para visualizar todos os serviços cadastrados, o nome da view deve ser:
--   [ ] Criar a view para cadastro de serviços
--   [ ] Criar a view para edição de serviços
--   [ ] Criar o arquivo `admin.js` na pasta de rotas e criar as seguintes rotas:
+-   [x] Criar a view de admin para visualizar todos os serviços cadastrados, o nome da view deve ser:
+-   [x] Criar a view para cadastro de serviços
+-   [x] Criar a view para edição de serviços
+-   [x] Criar o arquivo `admin.js` na pasta de rotas e criar as seguintes rotas:
 
     -   | Route                        | Method | Param          | Description                                 |
         | :--------------------------- | :----- | :------------- | :------------------------------------------ |
@@ -182,3 +182,7 @@ Para atingir esse objetivo será necessário:
         | `/admin/servicos/:id`        | GET    | `id: required` | Deve renderizar a view `servicos`           |
 
 -   [ ] **Obs**: Lembre-se que para trabalhar com requisições do tipo PATCH, PUT e DELETE, precisamos instalar a biblioteca `method override`
+
+### Desafio
+
+Com o que aprendemos na aula do dia 19/01/2023 sobre session e cookies, implemente a session no projeto e proteja todas as rotas de admin para que somente usuários autenticados possam acessar estas rotas.
