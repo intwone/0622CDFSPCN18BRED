@@ -39,6 +39,14 @@ const AdminController = {
         Servico.update(id, servicoAtualizado);
 
         return res.redirect("/admin/servicos")
+    },
+
+    deleteService: (req, res) => {
+        const { id } = req.params;
+
+        Servico.destroy(id);
+
+        return res.redirect("/admin/servicos");
     }
 }
 

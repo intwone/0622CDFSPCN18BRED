@@ -57,9 +57,18 @@
 											>Editar</a
 										>
 									</button>
-									<button class="btn btn-danger">
-										Excluir
-									</button>
+
+									<form
+										action="/admin/servicos/<%= servico.id %>/delete?_method=DELETE"
+										method="POST"
+									>
+										<button
+											class="btn btn-danger"
+											type="submit"
+										>
+											Excluir
+										</button>
+									</form>
 								</div>
 							</td>
 						</tr>

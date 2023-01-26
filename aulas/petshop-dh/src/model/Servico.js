@@ -51,6 +51,16 @@ const Servico = {
         fs.writeFileSync(path.resolve("src", "database", "db.json"), dbJson);
 
         return;
+    },
+
+    destroy: (id) => {
+        const index = db.services.findIndex(servico => servico.id === id);
+        console.log(index);
+
+        db.services.splice(index, 1);
+
+        const dbJson = JSON.stringify(db, null, 4);
+        fs.writeFileSync(path.resolve("src", "database", "db.json"), dbJson);
     }
 }
 

@@ -1,35 +1,28 @@
 {
     "services": [
         {
-            "id": 1,
-            "name": "Banho e tosa",
-            "price": 70,
-            "description": "O melhor serviço de banho e tosa da cidade!",
-            "image": "https://www.revistapetcenter.com.br/wp-content/uploads/2022/07/petcenter-241-anuario-banho-e-tosa-renta%CC%81vel.jpg"
-        },
-        {
-            "id": 2,
+            "id": "2",
             "name": "Vacinação",
             "price": 120,
             "description": "Cuide da saúde do seu pet, coloque a carteira de vacinação do seu pet em dia!",
             "image": "https://www.granvitapet.com.br/sitedata//imgsdt/geral/vacinacao-do-seu-pet.jpg"
         },
         {
-            "id": 3,
+            "id": "3",
             "name": "Passeio",
             "price": 50.97,
             "description": "Passeamos com o seu pet. Duração do passeio: 15min",
             "image": "https://cisavet.com.br/arquivos/banco-de-imagens/categoria-1/dicas-para-a-hora-do-passeio-com-o-pet-20180820132255.jpg"
         },
         {
-            "id": 4,
+            "id": "4",
             "name": "Cuidar do pet - Diária",
             "price": 80.55,
             "description": "Cuidamos do seu pet no período da 08:00 - 18:00. Neste valor está incluso um passeio com o pet e a alimentação.",
             "image": "https://assets.elanco.com/8e0bf1c2-1ae4-001f-9257-f2be3c683fb1/fb066060-85f9-4b46-806e-33083fbbf82b/carinho-cachorro.jpg"
         },
         {
-            "id": 5,
+            "id": "5",
             "name": "Consulta veterinária",
             "price": 150.98,
             "description": "Realizamos atendimeto médico ao seu pet com os melhores veterinários da cidade.",
@@ -47,13 +40,6 @@
             "name": "Teste",
             "price": 25.14,
             "description": "teste de cadastro",
-            "image": "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png"
-        },
-        {
-            "id": "421ea205-72e7-4f48-9c9d-5a0c2b4c84af",
-            "name": "Teste editado 2",
-            "description": "editado 2",
-            "price": "50.99",
             "image": "https://s2.glbimg.com/nvjFq8VRjyrpdQqaOeywz-5DFwY=/e.glbimg.com/og/ed/f/original/2021/08/27/captura_de_tela_2021-08-27_as_11.01.15.png"
         }
     ],
