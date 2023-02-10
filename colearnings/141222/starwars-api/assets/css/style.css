@@ -1,0 +1,19 @@
+body {
+    background-color: #363a40;
+}
+
+header img {
+    width: 90px;
+}
+
+header {
+    background-color: #272B30;
+}
+
+/* .section__tabela {
+    min-height: 60vh;
+} */
+
+footer {
+    background-color: #DBA90D;
+}

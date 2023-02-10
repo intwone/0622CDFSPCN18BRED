@@ -1,47 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/cadastro.css">
+		<link rel="stylesheet" href="/css/cadastro.css" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+			crossorigin="anonymous"
+		/>
 
-    <script src="/js/cadastro.js" defer></script>
+		<!-- <script src="/js/cadastro.js" defer></script> -->
 
-    <title>Cadastro</title>
-</head>
-<body>
-    
-    
-    <%- include('../components/header.ejs') %>
+		<title>Cadastro</title>
+	</head>
+	<body>
+		<%- include('../components/header.ejs') %>
 
-    <main class="container">
-        <section class="form-register">
-            <form class="w-75 mx-auto">
-                <div class="loading">
-                    <div class="d-flex justify-content-center">
-                        <div class="spinner-border" role="status">
-                          <span class="visually-hidden">Loading...</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <h1 class="text-center mb-3">Cadastro</h1>
+		<main class="container">
+			<section class="form-register">
+				<form class="w-75 mx-auto" action="/cadastro" method="POST">
+					<div class="loading">
+						<div class="d-flex justify-content-center">
+							<div class="spinner-border" role="status">
+								<span class="visually-hidden">Loading...</span>
+							</div>
+						</div>
+					</div>
 
-                <div class="mb-3">
-                    <label for="name-register" class="form-label">Nome</label>
-                    <input type="text" class="form-control" id="name-register" placeholder="Insira o seu nome completo">
-                </div>
+					<h1 class="text-center mb-3">Cadastro</h1>
+					<% if(typeof error !== "undefined") { %>
+					<h2 style="color: red"><%= error %></h2>
+					<% } %>
 
-                <div class="mb-3">
-                  <label for="email-register" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="email-register" placeholder="example@mail.com">
-                </div>
+					<div class="mb-3">
+						<label for="name-register" class="form-label"
+							>Nome</label
+						>
+						<input
+							type="text"
+							class="form-control"
+							id="name-register"
+							placeholder="Insira o seu nome completo"
+							name="name"
+						/>
+					</div>
 
-                <div class="mb-3">
+					<div class="mb-3">
+						<label for="email-register" class="form-label"
+							>Email</label
+						>
+						<input
+							type="email"
+							class="form-control"
+							id="email-register"
+							placeholder="example@mail.com"
+							name="email"
+						/>
+					</div>
+
+					<!-- <div class="mb-3">
                     <label for="cep-register" class="form-label">Cep</label>
                     <input type="text" class="form-control" id="cep-register" placeholder="86027000">
                 </div>
@@ -74,30 +96,49 @@
                 <div class="mb-3">
                     <label for="telphone-register" class="form-label">Telefone (WhatsApp)</label>
                     <input type="tel" class="form-control" id="telphone-register" placeholder="43912345678">
-                </div>
+                </div> -->
 
+					<div class="mb-3">
+						<label for="password-register" class="form-label"
+							>Senha</label
+						>
+						<input
+							type="password"
+							class="form-control"
+							id="password-register"
+							placeholder="********"
+							name="password"
+						/>
+					</div>
 
-                <div class="mb-3">
-                  <label for="password-register" class="form-label">Senha</label>
-                  <input type="password" class="form-control" id="password-register" placeholder="********">
-                </div>
+					<div
+						class="mb-3 form-check d-flex justify-content-between flex-wrap"
+					>
+						<div class="mb-2">
+							<input
+								type="checkbox"
+								class="form-check-input"
+								id="news-register"
+							/>
+							<label class="form-check-label" for="news-register"
+								>Deseja receber as novidades?</label
+							>
+						</div>
 
-                <div class="mb-3 form-check d-flex justify-content-between flex-wrap">
-                    <div class="mb-2">
-                        <input type="checkbox" class="form-check-input" id="news-register">
-                        <label class="form-check-label" for="news-register">Deseja receber as novidades?</label>
-                    </div>
+						<a
+							href="/login"
+							title="Não tem uma conta? Clique aqui e cadastre-se"
+							>Tem uma conta? Fazer Login</a
+						>
+					</div>
 
-                    <a href="/login" title="Não tem uma conta? Clique aqui e cadastre-se">Tem uma conta? Fazer Login</a>
+					<button type="submit" class="btn btn-primary w-100">
+						Cadastrar
+					</button>
+				</form>
+			</section>
+		</main>
 
-                </div>
-
-                <button type="submit" class="btn btn-primary w-100">Cadastrar</button>
-              </form>
-        </section>
-    </main>
-
-    <%- include('../components/footer.ejs') %>
-
-</body>
+		<%- include('../components/footer.ejs') %>
+	</body>
 </html>

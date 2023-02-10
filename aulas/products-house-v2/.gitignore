@@ -1,1 +1,7 @@
 node_modules
+/src/logs/*.txt
+/src/public/images/*.jpg
+/src/public/images/*.png
+/src/public/images/*.svg
+/src/public/images/*.jpeg
+/src/public/images/*.webpp

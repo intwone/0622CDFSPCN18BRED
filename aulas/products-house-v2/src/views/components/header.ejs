@@ -1,83 +1,84 @@
 <div class="menu-mobile">
-    <section>
-        <ul>
-            <li>
-                <a href="/index.html">Home</a>
-            </li>
+	<section>
+		<ul>
+			<li>
+				<a href="/index.html">Home</a>
+			</li>
 
-            <li>
-                <a href="/index.html">Carrinho</a>
-            </li>
+			<li>
+				<a href="/index.html">Carrinho</a>
+			</li>
 
-            <li>
-                <a href="/login.html">Login</a>
-            </li>
+			<li>
+				<a href="/login.html">Login</a>
+			</li>
 
-            <li>
-                <a href="#">Categoria 1</a>
-            </li>
+			<li>
+				<a href="#">Categoria 1</a>
+			</li>
 
-            <li>
-                <a href="#">Categoria 2</a>
-            </li>
+			<li>
+				<a href="#">Categoria 2</a>
+			</li>
 
-            <li>
-                <a href="#">Categoria 3</a>
-            </li>
-        </ul>
+			<li>
+				<a href="#">Categoria 3</a>
+			</li>
+		</ul>
 
-        <button id="menu-mobile--close">
-            <span class="material-symbols-outlined">
-                close
-            </span>
-        </button>
-    </section>
+		<button id="menu-mobile--close">
+			<span class="material-symbols-outlined"> close </span>
+		</button>
+	</section>
 </div>
 
 <header>
-    <!-- Script de eventos do Header -->
-    <script src="/js/header.js" defer></script>
-    <!-- Script de eventos do Header -->
+	<!-- Script de eventos do Header -->
+	<script src="/js/header.js" defer></script>
+	<!-- Script de eventos do Header -->
 
-    <div class="container">
-        <div class="logo">
-            <a href="/">
-                <h1>Products House</h1>
-            </a>
-        </div>
+	<div class="container">
+		<div class="logo">
+			<a href="/">
+				<h1>Products House</h1>
+			</a>
+		</div>
 
-        <form id="search">
-            <input type="text" name="q" id="search" autocomplete="off" placeholder="Buscar produtos">
-            <button type="submit">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-            </button>
+		<form id="search">
+			<input
+				type="text"
+				name="q"
+				id="search"
+				autocomplete="off"
+				placeholder="Buscar produtos"
+			/>
+			<button type="submit">
+				<span class="material-symbols-outlined"> search </span>
+			</button>
+		</form>
 
-        </form>
+		<div class="header--controls">
+			<a href="/login">
+				<button title="Login">
+					<span class="material-symbols-outlined"> login </span>
+				</button>
+			</a>
 
-        <div class="header--controls">
-            <a href="/login">
-                <button title="Login">
-                    <span class="material-symbols-outlined">
-                        login
-                    </span>
-                </button>
-            </a>
+			<a href="/carrinho.html" target="_blank">
+				<button title="Carrinho">
+					<span class="material-symbols-outlined">
+						shopping_cart
+					</span>
+				</button>
+			</a>
 
-            <a href="/carrinho.html" target="_blank">
-                <button title="Carrinho">
-                    <span class="material-symbols-outlined">
-                        shopping_cart
-                    </span>
-                </button>
-            </a>
-        </div>
+			<% if(locals.user && user) { %>
+			<p>Seja bem vindo <%= user.name %></p>
+			<% } %>
+		</div>
 
-        <button id="menu-mobile--open" class="menu">
-            <span class="material-symbols-outlined">
-                menu
-            </span>
-        </button>
-    </div>
+		<button id="menu-mobile--open" class="menu">
+			<span class="material-symbols-outlined"> menu </span>
+		</button>
+	</div>
 </header>

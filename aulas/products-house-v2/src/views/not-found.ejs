@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/not-found.css">
+
+    <title>Página não encontrada</title>
+</head>
+<body>
+    <%- include('./components/header.ejs') %>
+
+    <main class="container">
+        <section class="error">
+            <h1>Ops... Alguma coisa está errada</h1>
+
+            <article>
+                <img src="/images/pages/not-found-image.svg" alt="">
+            </article>
+        </section>
+    </main>
+
+    <%- include('./components/footer.ejs') %>
+</body>
+</html>
