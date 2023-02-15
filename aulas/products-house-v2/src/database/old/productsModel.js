@@ -1,4 +1,4 @@
-const database = require('../database/db.json');
+const database = require('../db.json');
 const fs = require('fs');
 const path = require('path');
 const pathDb = path.resolve("src", "database", "db.json");
@@ -24,10 +24,10 @@ const productsModel = {
     },
 
     //Método que irá atualizar um produto no banco de dados
-    update: (id, product) => {},
+    update: (id, product) => { },
 
     //Metodo que irá deletar um produto no banco de dados
-    delete: (id) => {}
+    delete: (id) => { }
 }
 
 module.exports = productsModel;
