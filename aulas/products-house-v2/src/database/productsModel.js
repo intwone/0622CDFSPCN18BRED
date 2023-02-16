@@ -1,4 +1,4 @@
-const database = require('../database/db.json');
+const database = require('./db.json');
 const fs = require('fs');
 const path = require('path');
 const pathDb = path.resolve("src", "database", "db.json");

@@ -31,12 +31,12 @@
                 
                         <div class="mb-3">
                           <label for="name" class="form-label">Nome</label>
-                          <input type="text" class="form-control" id="name" name="name" placeholder="MacBook Pro 16 polegadas">
+                          <input type="text" class="form-control" id="name" name="name" placeholder="MacBook Pro 16 polegadas" value="<%= product.name %>">
                         </div>
 
                         <div class="mb-3">
                             <label for="price" class="form-label">Preço</label>
-                            <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="0,00">
+                            <input type="number" step="0.01" class="form-control" id="price" name="price" placeholder="0,00" value="<%= product.price %>">
                         </div>
 
                         <!-- Utilizar na aula de uploads de arquivos (multer)-->
@@ -48,25 +48,25 @@
 
                         <div class="mb-3">
                             <label for="image" class="form-label">Imagem</label>
-                            <input type="text" class="form-control" id="image" name="image">
+                            <input type="text" class="form-control" id="image" name="image" value="<%= product.image %>">
                         </div>
 
                         <div class="mb-3 form-check d-flex justify-content-start" style="gap: 4rem;">
                             <div class="mb-2">
                                 <label class="form-check-label" for="active" >Ativo?</label>
-                                <input type="checkbox" class="form-check-input" id="active" name="active">
+                                <input type="checkbox" class="form-check-input" id="active" name="active" <%= product.active ? "checked" : "" %>>
                             </div>
 
                             <div class="mb-2">
                                 <label class="form-check-label" for="stock">Em estoque?</label>
-                                <input type="checkbox" class="form-check-input" id="stock" name="stock">
+                                <input type="checkbox" class="form-check-input" id="stock" name="stock" <%= product.stock ? "checked" : "" %>>
                             </div>
                 
                         </div>
                 
                         <div class="mb-3">
                           <label for="description" class="form-label">Descrição</label>
-                          <textarea class="form-control" id="description" rows="3" name="description"></textarea>
+                          <textarea class="form-control" id="description" rows="3" name="description"><%= product.description %></textarea>
                         </div>
                 
                         <button type="submit" class="btn btn-primary w-100">Cadastrar</button>

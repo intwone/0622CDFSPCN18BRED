@@ -1,15 +1,17 @@
 const { randomUUID } = require('crypto');
-const productsModel = require('../models/productsModel');
-const produtoModel = require('../models/productsModel');
+const productsModel = require('../database/productsModel');
+const produtoModel = require('../database/productsModel');
+
+const { Product } = require('../models')
 
 const AdminController = {
     showLogin: (req, res) => {
         return res.render('admin/auth/login');
     },
 
-    showHome: (req, res) => {
+    showHome: async (req, res) => {
         const url = req.originalUrl;
-        const products = produtoModel.findAll();
+        const products = await Product.findAll()
 
         return res.render('admin/home', {url, products});
     },
@@ -24,11 +26,20 @@ const AdminController = {
         return res.render('admin/products/cadastro', {url});
     },
 
-    showEditarProdutos: (req, res) => {
+    showEditarProdutos: async (req, res) => {
         const url = req.originalUrl;
         const { id } = req.params
 
-        const productFound = database.products.find(product => product.id === id)
+        //const productFound = database.products.find(product => product.id === id)
+
+        // SELECT * FROM products WHERE id = id
+        const productFound = await Product.findOne({
+            where: {
+                id
+            }
+        })
+
+        // const productFound = await Product.findByPk(id)
 
         return res.render('admin/products/editar', { url, product: productFound });
     },
