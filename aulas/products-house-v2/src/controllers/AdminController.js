@@ -69,7 +69,7 @@ const AdminController = {
         return res.redirect('/admin/home')
     },
 
-    storeProduto: (req, res) => {
+    storeProduto: async (req, res) => {
         const {name, price, active, stock, description} = req.body
 
         const image = `/images/${req.file.filename}`
@@ -79,43 +79,39 @@ const AdminController = {
             name,
             price,
             image,
-            active,
+            active: active === 'on' ? true : false,
             stock: stock === 'on' ? true : false,
             description
         }
-
-        productsModel.create(newProduct);
-
+        await Product.create(newProduct);
         return res.redirect('/admin/home')
     },
 
-    updateProduto: (req, res) => {
+    updateProduto: async (req, res) => {
         const {name, price, image, active, stock, description} = req.body
         const { id } = req.params
-
-        const indexProduct = database.products.findIndex(product => product.id === id)
         
         const editedProduct = {
             id,
             name,
             price,
             image,
-            active,
-            stock,
+            active: active === 'on' ? true : false,
+            stock: stock === 'on' ? true : false,
             description
         }
 
-        database.products.splice(indexProduct, 1, editedProduct);
+        await Product.update(editedProduct, {
+            where: { id }
+        })
         return res.redirect('/admin/home')
     },
     
-    deleteProduto: (req, res) => {
+    deleteProduto: async (req, res) => {
         const { id } = req.params
-
-        const indexProduct = database.products.findIndex(product => product.id === id)
-
-        database.products.splice(indexProduct, 1)
-
+        await Product.destroy({
+            where: { id }
+        })
         return res.redirect('/admin/home')
     }
 };
