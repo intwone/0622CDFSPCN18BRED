@@ -27,11 +27,22 @@ module.exports = (sequelize, DataTypes) => {
     stock: {
       type: DataTypes.BOOLEAN,
       allowNull: false
+    },
+    category_id: {
+      type: DataTypes.STRING,
+      allowNull: false
     }
   }, {
     tableName: 'products',
     timestamps: false
   })
+
+  Product.associate = (models) => {
+    Product.belongsTo(models.Category, {
+      foreignKey: 'category_id',
+      as: 'category'
+    })
+  }
 
   return Product
 }
