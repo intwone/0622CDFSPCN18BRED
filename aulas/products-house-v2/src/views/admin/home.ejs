@@ -36,6 +36,7 @@
                         <th scope="col">ID</th>
                         <th scope="col">imagem</th>
                         <th scope="col">Nome</th>
+                        <th scope="col">Categoria</th>
                         <th scope="col">Preço</th>
                         <th scope="col">Ativo</th>
                         <th scope="col">Estoque</th>
@@ -49,6 +50,7 @@
                                 <th scope="row">1</th>
                                 <td><img class="thumb" src="<%= product.image%>" alt="" width="100px" height="100px"></td>
                                 <td><%= product.name%></td>
+                                <td><%= product.category ? product.category.description : "Sem categoria" %></td>
                                 <td><%= product.price%></td>
                                 <td><%= product.active ? "Habilitado" : "Desabilitado" %></td>
                                 <td><%= product.stock ? "Em estoque" : "Sem estoque" %></td>

@@ -2,7 +2,7 @@ const { randomUUID } = require('crypto');
 const productsModel = require('../database/productsModel');
 const produtoModel = require('../database/productsModel');
 
-const { Product } = require('../models')
+const { Product, Category } = require('../models')
 
 const AdminController = {
     showLogin: (req, res) => {
@@ -11,7 +11,12 @@ const AdminController = {
 
     showHome: async (req, res) => {
         const url = req.originalUrl;
-        const products = await Product.findAll()
+        const products = await Product.findAll({
+            include: {
+                model: Category,
+                as: 'category'
+            }
+        })
 
         return res.render('admin/home', {url, products});
     },
@@ -21,9 +26,12 @@ const AdminController = {
         return res.render('admin/dashboard', {url});
     },
 
-    showCadastroProdutos: (req, res) => {
+    showCadastroProdutos: async (req, res) => {
         const url = req.originalUrl;
-        return res.render('admin/products/cadastro', {url});
+
+        const categories = await Category.findAll()
+
+        return res.render('admin/products/cadastro', { url, categories });
     },
 
     showEditarProdutos: async (req, res) => {
@@ -70,7 +78,7 @@ const AdminController = {
     },
 
     storeProduto: async (req, res) => {
-        const {name, price, active, stock, description} = req.body
+        const {name, price, active, stock, description, category} = req.body
 
         const image = `/images/${req.file.filename}`
 
@@ -81,7 +89,8 @@ const AdminController = {
             image,
             active: active === 'on' ? true : false,
             stock: stock === 'on' ? true : false,
-            description
+            description,
+            category_id: category
         }
         await Product.create(newProduct);
         return res.redirect('/admin/home')
