@@ -1,4 +1,4 @@
-const productsModel = require('../database/old/productsModel');
+const productsModel = require('../database/productsModel');
 
 const HomeController = {
     showHome: (req, res) => {
