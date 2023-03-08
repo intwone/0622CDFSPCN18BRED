@@ -132,8 +132,8 @@ Para conseguir resolver este desafio será necessário:
 -   [x] Criar o banco de dados utilizando o CLI do sequelize
 -   [x] Criar a migration para gerar a tabela de livros
 -   [x] Criar a seeder para popular o banco de dados com os arquivos que temos no "banco de dados JS".
--   [ ] Criar as rotas do endpoint de livros.
--   [ ] Criar os controllers para realizar o CRUD.
+-   [x] Criar as rotas do endpoint de livros.
+-   [x] Criar os controllers para realizar o CRUD.
 
 ## Atividade 2
 

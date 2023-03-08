@@ -31,6 +31,8 @@ module.exports = (sequelize, DataTypes) => {
             type: DataTypes.INTEGER(10),
             allowNull: false
         },
+
+        country_code: DataTypes.STRING(3)
     }, {
         tableName: 'books',
         timestamp: true
