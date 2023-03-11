@@ -1,35 +1,59 @@
 <aside class="d-flex flex-column flex-shrink-0 p-3 min-vh-100 left">
-    <a href="/home-admin.html"
-        class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-        <span class="fs-4">Products House</span>
-    </a>
-    <hr>
+	<a
+		href="/home-admin.html"
+		class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none"
+	>
+		<span class="fs-4">Products House</span>
+	</a>
+	<hr />
 
-    <div class="dropdown">
-        <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
-            data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="https://www.kindpng.com/picc/m/24-248253_user-profile-default-image-png-clipart-png-download.png"
-                alt="" width="32" height="32" class="rounded-circle me-2">
-            <strong>Wendel Cutrim</strong>
-        </a>
-        <ul class="dropdown-menu dropdown-menu-dark text-small shadow">
-            <li><a class="dropdown-item" href="#">Cadastrar Admin</a></li>
-            <li><a class="dropdown-item" href="#">Configurações</a></li>
-            <li>
-                <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Sair</a></li>
-        </ul>
-    </div>
+	<div class="dropdown">
+		<a
+			href="#"
+			class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+			data-bs-toggle="dropdown"
+			aria-expanded="false"
+		>
+			<img
+				src="https://www.kindpng.com/picc/m/24-248253_user-profile-default-image-png-clipart-png-download.png"
+				alt=""
+				width="32"
+				height="32"
+				class="rounded-circle me-2"
+			/>
+			<strong><%= locals && locals.user.name %></strong>
+		</a>
+		<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+			<li><a class="dropdown-item" href="#">Cadastrar Admin</a></li>
+			<li><a class="dropdown-item" href="#">Configurações</a></li>
+			<li>
+				<hr class="dropdown-divider" />
+			</li>
+			<li><a class="dropdown-item" href="#">Sair</a></li>
+		</ul>
+	</div>
 
-    <hr>
-    <ul class="nav nav-pills flex-column mb-auto">
+	<hr />
+	<ul class="nav nav-pills flex-column mb-auto">
+		<li class="nav-item">
+			<a
+				href="/admin/home"
+				class="nav-link <%= url === '/admin/home' ? 'active' : '' %>"
+				aria-current="page"
+			>
+				<svg class="bi pe-none me-2" width="16" height="16">
+					<use xlink:href="#home"></use>
+				</svg>
+				Produtos
+			</a>
+		</li>
+
         <li class="nav-item">
-            <a href="/admin/home" class="nav-link <%= url === '/admin/home' ? 'active' : '' %>" aria-current="page">
+            <a href="/admin/categories" class="nav-link <%= url === '/admin/categories' ? 'active' : '' %>" aria-current="page">
                 <svg class="bi pe-none me-2" width="16" height="16">
                     <use xlink:href="#home"></use>
                 </svg>
-                Produtos
+                Categorias
             </a>
         </li>
 
@@ -42,24 +66,38 @@
             </a>
         </li>
 
-        <li>
-            <a href="/admin/dashboard" class="nav-link text-white <%= url === '/admin/dashboard' ? 'active' : '' %>">
-                <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#speedometer2"></use>
-                </svg>
-                Dashboard
-            </a>
-        </li>
+		<li>
+			<a
+				href="/admin/dashboard"
+				class="nav-link text-white <%= url === '/admin/dashboard' ? 'active' : '' %>"
+			>
+				<svg class="bi pe-none me-2" width="16" height="16">
+					<use xlink:href="#speedometer2"></use>
+				</svg>
+				Dashboard
+			</a>
+		</li>
 
-        <li>
-            <a href="#" class="nav-link text-white">
-                <svg class="bi pe-none me-2" width="16" height="16">
-                    <use xlink:href="#table"></use>
-                </svg>
-                Pedidos
-            </a>
-        </li>
+		<li>
+			<a href="#" class="nav-link text-white">
+				<svg class="bi pe-none me-2" width="16" height="16">
+					<use xlink:href="#table"></use>
+				</svg>
+				Pedidos
+			</a>
+		</li>
 
+<<<<<<< HEAD
+		<li>
+			<a href="#" class="nav-link text-white">
+				<svg class="bi pe-none me-2" width="16" height="16">
+					<use xlink:href="#people-circle"></use>
+				</svg>
+				Clientes
+			</a>
+		</li>
+	</ul>
+=======
         <li>
             <a href="#" class="nav-link text-white">
                 <svg class="bi pe-none me-2" width="16" height="16">
@@ -70,4 +108,5 @@
         </li>
 
     </ul>
+>>>>>>> 78d45166fc95424bd76e169cb17bfabdaf8c55ca
 </aside>

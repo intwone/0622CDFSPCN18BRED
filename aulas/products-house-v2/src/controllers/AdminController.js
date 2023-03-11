@@ -1,34 +1,53 @@
 const { randomUUID } = require('crypto');
-const productsModel = require('../models/productsModel');
-const produtoModel = require('../models/productsModel');
+const productsModel = require('../database/productsModel');
+const produtoModel = require('../database/productsModel');
+
+const { Product, Category } = require('../models')
 
 const AdminController = {
     showLogin: (req, res) => {
         return res.render('admin/auth/login');
     },
 
-    showHome: (req, res) => {
+    showHome: async (req, res) => {
         const url = req.originalUrl;
-        const products = produtoModel.findAll();
+        const products = await Product.findAll({
+            include: {
+                model: Category,
+                as: 'category'
+            }
+        })
 
-        return res.render('admin/home', {url, products});
+        return res.render('admin/home', { url, products });
     },
 
     showDashboard: (req, res) => {
         const url = req.originalUrl;
-        return res.render('admin/dashboard', {url});
+        return res.render('admin/dashboard', { url });
     },
 
-    showCadastroProdutos: (req, res) => {
+    showCadastroProdutos: async (req, res) => {
         const url = req.originalUrl;
-        return res.render('admin/products/cadastro', {url});
+
+        const categories = await Category.findAll()
+
+        return res.render('admin/products/cadastro', { url, categories });
     },
 
-    showEditarProdutos: (req, res) => {
+    showEditarProdutos: async (req, res) => {
         const url = req.originalUrl;
         const { id } = req.params
 
-        const productFound = database.products.find(product => product.id === id)
+        //const productFound = database.products.find(product => product.id === id)
+
+        // SELECT * FROM products WHERE id = id
+        const productFound = await Product.findOne({
+            where: {
+                id
+            }
+        })
+
+        // const productFound = await Product.findByPk(id)
 
         return res.render('admin/products/editar', { url, product: productFound });
     },
@@ -58,8 +77,8 @@ const AdminController = {
         return res.redirect('/admin/home')
     },
 
-    storeProduto: (req, res) => {
-        const {name, price, active, stock, description} = req.body
+    storeProduto: async (req, res) => {
+        const { name, price, active, stock, description, category } = req.body
 
         const image = `/images/${req.file.filename}`
 
@@ -68,43 +87,40 @@ const AdminController = {
             name,
             price,
             image,
-            active,
+            active: active === 'on' ? true : false,
             stock: stock === 'on' ? true : false,
-            description
+            description,
+            category_id: category
         }
-
-        productsModel.create(newProduct);
-
+        await Product.create(newProduct);
         return res.redirect('/admin/home')
     },
 
-    updateProduto: (req, res) => {
-        const {name, price, image, active, stock, description} = req.body
+    updateProduto: async (req, res) => {
+        const { name, price, image, active, stock, description } = req.body
         const { id } = req.params
 
-        const indexProduct = database.products.findIndex(product => product.id === id)
-        
         const editedProduct = {
             id,
             name,
             price,
             image,
-            active,
-            stock,
+            active: active === 'on' ? true : false,
+            stock: stock === 'on' ? true : false,
             description
         }
 
-        database.products.splice(indexProduct, 1, editedProduct);
+        await Product.update(editedProduct, {
+            where: { id }
+        })
         return res.redirect('/admin/home')
     },
-    
-    deleteProduto: (req, res) => {
+
+    deleteProduto: async (req, res) => {
         const { id } = req.params
-
-        const indexProduct = database.products.findIndex(product => product.id === id)
-
-        database.products.splice(indexProduct, 1)
-
+        await Product.destroy({
+            where: { id }
+        })
         return res.redirect('/admin/home')
     }
 };

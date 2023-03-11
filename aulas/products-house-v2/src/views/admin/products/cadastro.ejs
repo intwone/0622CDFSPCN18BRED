@@ -56,6 +56,15 @@
                             </div>
                 
                         </div>
+
+                        <div class="mb-3">
+                            <label for="category" class="form-label">Categoria</label>
+                            <select name="category" id="category" class="form-control">
+                                <% categories.forEach(category => { %>
+                                    <option value="<%= category.id %>"><%= category.description %></option>
+                                <% }) %>
+                            </select>
+                        </div>
                 
                         <div class="mb-3">
                           <label for="description" class="form-label">Descrição</label>
