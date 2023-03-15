@@ -1,0 +1,27 @@
+.container {
+  border: 1px solid #434345;
+  width: 250px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.container img {
+  height: 100px;
+  width: 120px;
+}
+
+.details .top {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0 15px 0;
+}
+
+.details .bottom {
+  text-align: justify;
+  font-size: small;
+}

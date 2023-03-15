@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #28262E;
+  padding: 20px;
+}
+
+.welcame h2 strong {
+  color: #FF9000
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
