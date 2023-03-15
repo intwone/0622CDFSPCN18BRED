@@ -1,8 +1,4 @@
-<<<<<<< HEAD:aulas/products-house-v2/src/database/old/productsModel.js
-const database = require('../db.json');
-=======
 const database = require('./db.json');
->>>>>>> 78d45166fc95424bd76e169cb17bfabdaf8c55ca:aulas/products-house-v2/src/database/productsModel.js
 const fs = require('fs');
 const path = require('path');
 const pathDb = path.resolve("src", "database", "db.json");

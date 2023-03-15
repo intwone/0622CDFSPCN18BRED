@@ -2,11 +2,7 @@ const crypto = require('crypto');
 const fs = require('fs');
 const path = require('path');
 
-<<<<<<< HEAD:aulas/products-house-v2/src/database/old/User.js
 const db = require("../db.json");
-=======
-const db = require("./db.json");
->>>>>>> 78d45166fc95424bd76e169cb17bfabdaf8c55ca:aulas/products-house-v2/src/database/User.js
 
 const User = {
     findOne: (email) => {
