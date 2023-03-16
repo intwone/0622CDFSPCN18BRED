@@ -1,88 +1,75 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/css/produto.css">
+		<link rel="stylesheet" href="/css/produto.css" />
 
-    <script src="/js/produto.js" defer></script>
+		<script src="/js/produto.js" defer></script>
 
-    <title>Produto</title>
-</head>
-<body>
-    <%- include('./components/header.ejs') %>
+		<title>Produto</title>
+	</head>
+	<body>
+		<%- include('./components/header.ejs') %> <%- include('./components/navbar.ejs') %>
 
-    <%- include('./components/navbar.ejs') %>
+		<main class="container">
+			<section class="product">
+				<h2><%= product.name %></h2>
 
+				<div class="product__info">
+					<article class="product__image">
+						<img src="<%= product.image %>" alt="" />
+					</article>
 
-    <main class="container">
-        <section class="product">
-            <h2><%= product.name %></h2>
-            
-            <div class="product__info">
-                <article class="product__image">
-                    <img src="<%= product.image %>" alt="">
-                </article>
-    
-                <article class="product__owner">
-                    <div class="product__owner-banner">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint asperiores rerum velit alias consectetur ex, illo, iure atque voluptates aperiam obcaecati qui eligendi libero nobis, tempora molestias dolores? Praesentium.
-                    </div>
-                    
-                    <%#
-                        let status;
-                        if(product.stock) {
-                            status = "Em estoque"
-                        } else {
-                            status = "Sem estoque"
-                        }
-                    %> 
-                    
+					<article class="product__owner">
+						<div class="product__owner-banner">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sint asperiores rerum velit
+							alias consectetur ex, illo, iure atque voluptates aperiam obcaecati qui eligendi libero
+							nobis, tempora molestias dolores? Praesentium.
+						</div>
 
-                    <p>
-                        Vendido e entregue por: <strong>Products House</strong> | 
-                        <span id="stock"><%= product.stock ? "Em estoque" : "Sem Estoque" %></span>
-                    </p>
+						<%# let status; if(product.stock) { status = "Em estoque" } else { status = "Sem estoque" } %>
 
-                    <div>
-                        <h2 class="price"><%=product.price%></h2>
-                        <button>
-                            <span class="material-symbols-outlined">
-                                shopping_cart
-                            </span>
-                            Comprar
-                        </button>
-                    </div>
+						<p>
+							Vendido e entregue por: <strong>Products House</strong> |
+							<span id="stock"><%= product.stock ? "Em estoque" : "Sem Estoque" %></span>
+						</p>
 
-                    <p>
-                        À vita no PIX com até <strong>15%OFF</strong>
-                    </p>
+						<div>
+							<h2 class="price"><%=product.price%></h2>
+							<form action="/carrinho/adicionar" method="POST">
+								<input type="hidden" name="id" value="<%= product.id %>" />
+								<input type="hidden" name="name" value="<%= product.name %>" />
+								<input type="hidden" name="image" value="<%= product.image %>" />
+								<input type="hidden" name="price" value="<%= product.price %>" />
 
-                    <p>
-                        Em até 10x sem juros no <strong>cartão</strong>.
-                    </p>
-                </article>
-            </div>
-        </section>
+								<button type="submit">
+									<span class="material-symbols-outlined"> shopping_cart </span>
+									Comprar
+								</button>
+							</form>
+						</div>
 
-        <section class="product__more">
-            <button class="accordion">
-                <p>Descrição do produto</p>
-                <span class="material-symbols-outlined">
-                    expand_more
-                </span>
-            </button>
-            <div class="panel">
-                <p>
-                    <%=product.description%>
-                </p>
-            </div>
-        </section>
-    </main>
+						<p>À vita no PIX com até <strong>15%OFF</strong></p>
 
-    <%- include('./components/footer.ejs') %>
+						<p>Em até 10x sem juros no <strong>cartão</strong>.</p>
+					</article>
+				</div>
+			</section>
 
-</body>
+			<section class="product__more">
+				<button class="accordion">
+					<p>Descrição do produto</p>
+					<span class="material-symbols-outlined"> expand_more </span>
+				</button>
+				<div class="panel">
+					<p><%=product.description%></p>
+				</div>
+			</section>
+		</main>
+
+		<%- include('./components/footer.ejs') %>
+	</body>
 </html>
