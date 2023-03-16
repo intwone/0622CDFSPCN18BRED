@@ -2,11 +2,13 @@
 const express = require("express");
 const methodOverride = require('method-override')
 const session = require("express-session");
+const logger = require('morgan');
 
 const usersRouter = require('./routes/usersRouter');
 const homeRouter = require('./routes/homeRouter');
 const authRouter = require('./routes/authRouter');
 const adminRouter = require('./routes/adminRouter');
+const carrinhoRouter = require('./routes/carrinhoRouter');
 const requestLog = require('./middlewares/requestLog');
 /* const testeMiddleware = require('./middlewares/testeMiddleware'); */
 const path = require('path');
@@ -25,6 +27,8 @@ server.use(methodOverride('_method'))
 
 server.use(express.static(path.resolve("src", "public")));
 
+server.use(logger('dev'));
+
 server.use(session({
   secret: 'keyboard cat',
   resave: false,
@@ -38,6 +42,7 @@ server.use(requestLog);
 server.use(usersRouter);
 server.use(homeRouter);
 server.use(authRouter);
+server.use(carrinhoRouter);
 server.use(adminRouter);
 
 server.use((req, res, next) => {

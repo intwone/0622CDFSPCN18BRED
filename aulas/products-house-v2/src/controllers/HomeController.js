@@ -4,6 +4,11 @@ const HomeController = {
     showHome: (req, res) => {
         const products = productsModel.findAll();
 
+        if (req.session.user) {
+            return res.render('home', { products, user: req.session.user });
+        }
+
+
         return res.render('home', {
             products
         })
